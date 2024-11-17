@@ -2,7 +2,6 @@ import Image from "next/image";
 import { socialLinks } from "./config";
 import Link from "next/link";
 import { Dot } from "lucide-react";
-import Location from "./components/location";
 
 export default function Page() {
   return (
