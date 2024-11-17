@@ -24,45 +24,47 @@ export default function Page() {
 
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          i'm 21 year old developer. currently, undergrade sudent with a passion
-          of building cool products with a strong concepts of web2 / web3.
+          i'm a 21-year-old developer and an undergraduate student with a
+          passion for building cool products, with a strong understanding of
+          web2 / web3 concepts.
         </p>
         <p>
-          in my spare time i enjoy reading, writing, and learning new things
-          also sometimes doodling / sketching.
+          in my spare time, i enjoy reading, writing, learning new things, and
+          occasionally doodling / sketching.
         </p>
         <p>
           some of my recent achievements include: <br />
-          <Dot className="inline mx-1" /> winning a $1000 grant from{" "}
+          <Dot className="inline" /> winning a $1000 grant from{" "}
           <Link
             target="_"
             href="https://x.com/avhidotsol/status/1852357389170688162"
           >
-            superteam{" "}
-          </Link>{" "}
+            superteam
+          </Link>
           <br />
-          <Dot className="inline mx-1" /> founded a SaaS product{" "}
+          <Dot className="inline" /> founded a saas product{" "}
           <Link target="_" href="https://viralxpost.xyz">
             viralxpost
           </Link>
           <br />
-          <Dot className="inline mx-1" /> core member at{" "}
+          <Dot className="inline" /> core member of{" "}
           <Link href="https://x.com/AthenaF0SS">projects athena</Link>
           <br />
-          <Dot className="inline mx-1" /> contribution in{" "}
+          <Dot className="inline" /> contributed to{" "}
           <Link href="https://github.com/argoproj/argo-cd/pull/15059">
             cncf
           </Link>
         </p>
 
         <p>
-          if you're interested in collaborating on building some cool sh*ts,
-          just dm me on <Link href={socialLinks.twitter}>x</Link> or just drop a{" "}
-          <Link href={socialLinks.email}>mail</Link> will be getting back to you
-          by 2 business days. i'm always open to new ideas and projects!
+          if you're interested in collaborating on building some cool projects,
+          feel free to dm me on <Link href={socialLinks.twitter}>x</Link> or
+          drop me an <Link href={socialLinks.email}>email</Link>. i will get
+          back to you within 2 business days. i'm always open to new ideas and
+          projects!
         </p>
         <p>
-          Built and maintained by{" "}
+          built and maintained by{" "}
           <a href="https://x.com/avhidotsol" target="_blank">
             Avhi
           </a>
