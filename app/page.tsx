@@ -94,7 +94,7 @@ export default function Page() {
           <p>
             built and maintained by{" "}
             <a href="https://x.com/avhidotsol" target="_blank">
-              Avhi
+              avhi
             </a>
             .
           </p>
