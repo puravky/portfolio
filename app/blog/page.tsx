@@ -11,6 +11,15 @@ export default function BlogPosts() {
 
   return (
     <section>
+      <style>
+        {`
+          @media (min-width: 640px) and (max-width: 767px) {
+            .custom-margin {
+              padding-right: 20px;
+            }
+          }
+        `}
+      </style>
       <h1 className="mb-8 text-2xl font-medium tracking-tight">blog</h1>
       <div>
         {allBlogs
@@ -35,7 +44,7 @@ export default function BlogPosts() {
                     {post.metadata.title}
                   </p>
                   <p
-                    className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm ml-5
+                    className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm ml-5 custom-margin
                   md:pr-5 lg:pr-5"
                   >
                     {formatDate(post.metadata.publishedAt, false)}

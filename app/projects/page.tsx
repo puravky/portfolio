@@ -20,16 +20,16 @@ export default function Projects() {
             rel="noopener noreferrer"
             className="block group hover:opacity-80 transition-opacity duration-200"
           >
-            <div className="flex flex-col">
-              <div className="w-full flex justify-between items-baseline">
+            <div className="flex flex-col bg-zinc-100 dark:bg-zinc-900 rounded-md py-4">
+              <div className="w-full flex justify-between items-baseline ml-5">
                 <span className="text-black dark:text-white font-medium tracking-tight">
                   {project.title}
                 </span>
-                <span className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm">
+                <span className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm mr-10">
                   {project.year}
                 </span>
               </div>
-              <p className="prose prose-neutral dark:prose-invert pt-3">
+              <p className="prose prose-neutral dark:prose-invert pt-3 ml-5">
                 {project.description}
               </p>
             </div>
