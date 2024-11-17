@@ -10,7 +10,7 @@ export default function Page() {
         <Image
           src="/profile.jpg"
           alt="Profile photo"
-          className="rounded-full bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5 grayscale hover:grayscale-0"
+          className="rounded-full bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5 grayscale hover:grayscale-0 dark:border"
           unoptimized
           width={160}
           height={160}
@@ -82,7 +82,7 @@ export default function Page() {
             <div className="mr-5">jul-2023</div>
           </div>
         </p>
-        <div className=" w-full h-px bg-zinc-800"></div>
+        <div className="mt-14 w-full h-px bg-zinc-800"></div>
         <p>
           if you're interested in collaborating on building some cool sh*ts,
           feel free to dm me on <Link href={socialLinks.twitter}>x</Link> or
