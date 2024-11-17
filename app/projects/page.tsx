@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 import { projects } from "./project-data";
 
 export const metadata: Metadata = {
-  title: "Projects",
-  description: "My Projects",
+  title: "projects",
+  description: "projects",
 };
 
 export default function Projects() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">Projects</h1>
+      <h1 className="mb-8 text-2xl font-medium tracking-tight">projects</h1>
       <div className="space-y-6">
         {projects.map((project, index) => (
           <a

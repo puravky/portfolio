@@ -1,10 +1,10 @@
 export const metaData = {
   baseUrl: "https://portfolio-v1-ten-gold.vercel.app/",
-  title: "Avhi Mazumder",
-  name: "Avhi",
+  title: "avhi maz",
+  name: "avhi",
   ogImage: "/opengraph-image.png",
   description:
-    "Full stack developer crafting innovative solutions with a passion for clean code.",
+    "full stack developer crafting innovative solutions with a passion for clean code.",
 };
 
 export const socialLinks = {
