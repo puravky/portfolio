@@ -7,24 +7,23 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Project One",
-    year: 2023,
+    title: "Blink Arena",
+    year: 2024,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
+      "Introducing blinkarena: a platform where user can either host or join gaming tournament via Solana Blinks.",
+    url: "https://blinkarena.xyz/",
   },
   {
-    title: "Project Two",
-    year: 2022,
+    title: "Viralxpost",
+    year: 2024,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
+      "Introducing viralxpost: Let our AI tool help you create to engaging content that breaks through the noise and gets you seen by the right people.",
+    url: "https://viralxpost.xyz/",
   },
   {
-    title: "Project Three",
-    year: 2021,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
+    title: "Portfolio",
+    year: 2024,
+    description: "The website you're looking at.",
+    url: "https://avhimaz.in/",
   },
 ];
