@@ -19,19 +19,33 @@ const BlinkArena = () => {
         </p>
         <p>
           this project also won a 1000$ of grant from{" "}
-          <Link href="https://x.com/avhidotsol/status/1852357389170688162">
+          <Link
+            target="_"
+            href="https://x.com/avhidotsol/status/1852357389170688162"
+          >
             superteam
           </Link>
         </p>
         <p>
           you can view the{" "}
-          <Link href="https://x.com/avhidotsol/status/1852384957630738688">
+          <Link
+            target="_"
+            href="https://x.com/avhidotsol/status/1852384957630738688"
+          >
             tweet
           </Link>{" "}
-          here. the code is open-source and available on{" "}
-          <Link href="https://github.com/AvhiMaz/blink-arena">github</Link>,
-          deployed on <Link href="https://vercel.com/">vercel</Link> and here’s
-          the <Link href="https://www.blinkarena.xyz/">live link</Link>
+          here. the code is open-sourced and available on{" "}
+          <Link target="_" href="https://github.com/AvhiMaz/blink-arena">
+            github
+          </Link>
+          , deployed on{" "}
+          <Link target="_" href="https://vercel.com/">
+            vercel
+          </Link>{" "}
+          and here’s the{" "}
+          <Link target="_" href="https://www.blinkarena.xyz/">
+            live link
+          </Link>
         </p>
         <p>
           skills used : nextjs | prisma | mongodb | git | github | solana blinks

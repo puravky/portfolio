@@ -19,29 +19,34 @@ const BlinkArena = () => {
           people.
         </p>
         <p>
-          this project was made with one of my childhood developer friend{" "}
+          this project was created in collaboration with one of my childhood
+          developer friend{" "}
           <Link target="_" href="https://x.com/near0lx/">
-            pawan
+            pawan,
           </Link>{" "}
-          before going to solana hh as we need to showcase some project in the
-          even to everyone.
+          before attending the solana hacker house as we needed a project to
+          showcase at the event to everyone.
         </p>
         <p>
           the code is open-sourced and available on{" "}
           <Link target="_" href="https://github.com/viralxpost/viralxpost-web">
             github
           </Link>
-          . here’s the{" "}
+          , deployed on{" "}
+          <Link target="_" href="https://vercel.com">
+            vercel
+          </Link>{" "}
+          and here’s the{" "}
           <Link target="_" href="https://www.viralxpost.xyz/">
             live link
           </Link>
           <p>
-            and yes the backend is down as it is deployed on{" "}
+            and yes the backend is down as the backend is deployed on{" "}
             <Link href="https://render.com/">render</Link>, need to upgrade it !
           </p>
           <p>
-            skills used : nextjs | mongoose | mongodb | git | github |
-            tailwindcss | typescript | docker.
+            skills used : react | mongoose | mongodb | git | github |
+            tailwindcss | typescript | node.js | express.js | docker.
           </p>
         </p>
       </div>

@@ -22,9 +22,19 @@ const BlinkArena = () => {
         className="rounded-lg"
       />
       <div className="prose prose-neutral dark:prose-invert">
-        <p>nothing to write in this</p>
-        <p>follow me to stay connected with me :)</p>
-        <p>see the footer you will find me on you favorite platform</p>
+        <p>nothing to write here</p>
+        <p>
+          follow me to stay connected, or feel free to dm me if you'd like to
+          collaborate on turning cool ideas into reality. check the footer to
+          find me on your favorite platform!
+        </p>
+        <p>
+          and yes the code not open-sourced yet (soon will be) and it is
+          deployed on{" "}
+          <Link target="_" href="https://vercel.com">
+            vercel
+          </Link>
+        </p>
         <p>skills used : nextjs | git | github | tailwindcss | typescript.</p>
       </div>
     </div>
