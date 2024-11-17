@@ -2,11 +2,17 @@ import Image from "next/image";
 import { socialLinks } from "./config";
 import Link from "next/link";
 import { Dot } from "lucide-react";
+import Particles from "./components/particle";
 
 export default function Page() {
   return (
-    <div>
-      <section>
+    <div className="relative min-h-screen">
+      {/* Particles Component rendered as background */}
+      <div className="absolute inset-0 z-0">
+        <Particles />
+      </div>
+
+      <section className="relative z-10">
         <a href={socialLinks.twitter} target="_blank">
           <Image
             src="/profile.jpg"
