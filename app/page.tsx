@@ -74,7 +74,7 @@ export default function Page() {
             <div className="bg-zinc-100 dark:bg-zinc-900 rounded-md py-[1px] flex items-center justify-between">
               <div className="">
                 <p className="ml-5">
-                  contributed to{" "}
+                  contribution in{" "}
                   <Link href="https://github.com/argoproj/argo-cd/pull/15059">
                     cncf
                   </Link>
