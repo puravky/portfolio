@@ -42,7 +42,7 @@ export default function Page() {
                     target="_"
                     href="https://x.com/avhidotsol/status/1852357389170688162"
                   >
-                    superteam,
+                    superteam
                   </Link>
                 </p>
               </div>
