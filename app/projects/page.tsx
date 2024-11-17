@@ -16,8 +16,6 @@ export default function Projects() {
           <a
             key={index}
             href={project.url}
-            target="_blank"
-            rel="noopener noreferrer"
             className="block group hover:opacity-80 transition-opacity duration-200"
           >
             <div className="flex flex-col bg-zinc-100 dark:bg-zinc-900 rounded-md py-4">
