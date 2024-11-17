@@ -1,13 +1,11 @@
 import Image from "next/image";
 import { socialLinks } from "./config";
 import Link from "next/link";
-import { Dot } from "lucide-react";
 import Particles from "./components/particle";
 
 export default function Page() {
   return (
     <div className="relative min-h-screen">
-      {/* Particles Component rendered as background */}
       <div className="absolute inset-0 z-0">
         <Particles />
       </div>
@@ -40,7 +38,7 @@ export default function Page() {
           </p>
           <p className="">
             some of my recent achievements includes: <br />
-            <div className="flex bg-zinc-100 dark:bg-zinc-900 rounded-md py-[1px] mt-6 items-center justify-between">
+            <div className="flex tracking-tighter bg-zinc-100 dark:bg-zinc-900 rounded-md py-[1px] mt-6 items-center justify-between">
               <div className="">
                 <p className="ml-5">
                   won $1000 grant from{" "}
@@ -52,20 +50,20 @@ export default function Page() {
                   </Link>
                 </p>
               </div>
-              <div className="mr-5">oct-2024</div>
+              <div className="mr-5">2024</div>
             </div>
             <br />
-            <div className="bg-zinc-100 dark:bg-zinc-900 rounded-md py-[1px] flex items-center justify-between">
+            <div className="bg-zinc-100 tracking-tighter dark:bg-zinc-900 rounded-md py-[1px] flex items-center justify-between">
               <div className="">
                 <p className="ml-5">
                   core member at{" "}
                   <Link href="https://x.com/AthenaF0SS">projects athena</Link>
                 </p>
               </div>
-              <div className="mr-5">aug-2024</div>
+              <div className="mr-5">2024</div>
             </div>
             <br />
-            <div className="bg-zinc-100 dark:bg-zinc-900 rounded-md py-[1px] flex items-center justify-between">
+            <div className="bg-zinc-100 tracking-tighter  dark:bg-zinc-900 rounded-md py-[1px] flex items-center justify-between">
               <div className="">
                 <p className="ml-5">
                   co-founded{" "}
@@ -74,10 +72,10 @@ export default function Page() {
                   </Link>
                 </p>
               </div>
-              <div className="mr-5">jul-2024</div>
+              <div className="mr-5">2024</div>
             </div>
             <br />
-            <div className="bg-zinc-100 dark:bg-zinc-900 rounded-md py-[1px] flex items-center justify-between">
+            <div className="bg-zinc-100 tracking-tighter dark:bg-zinc-900 rounded-md py-[1px] flex items-center justify-between">
               <div className="">
                 <p className="ml-5">
                   contribution in{" "}
@@ -86,7 +84,7 @@ export default function Page() {
                   </Link>
                 </p>
               </div>
-              <div className="mr-5">jul-2023</div>
+              <div className="mr-5">2023</div>
             </div>
           </p>
           <div className="mt-14 w-full h-px bg-zinc-800"></div>
