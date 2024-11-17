@@ -50,7 +50,7 @@ export default function Page() {
                   </Link>
                 </p>
               </div>
-              <div className="mr-5">2024</div>
+              <div className="mr-5">| 2024</div>
             </div>
             <br />
             <div className="bg-zinc-100 tracking-tighter dark:bg-zinc-900 rounded-md py-[1px] flex items-center justify-between">
@@ -60,7 +60,7 @@ export default function Page() {
                   <Link href="https://x.com/AthenaF0SS">projects athena</Link>
                 </p>
               </div>
-              <div className="mr-5">2024</div>
+              <div className="mr-5">| 2024</div>
             </div>
             <br />
             <div className="bg-zinc-100 tracking-tighter  dark:bg-zinc-900 rounded-md py-[1px] flex items-center justify-between">
@@ -72,7 +72,7 @@ export default function Page() {
                   </Link>
                 </p>
               </div>
-              <div className="mr-5">2024</div>
+              <div className="mr-5">| 2024</div>
             </div>
             <br />
             <div className="bg-zinc-100 tracking-tighter dark:bg-zinc-900 rounded-md py-[1px] flex items-center justify-between">
@@ -84,7 +84,7 @@ export default function Page() {
                   </Link>
                 </p>
               </div>
-              <div className="mr-5">2023</div>
+              <div className="mr-5">| 2023</div>
             </div>
           </p>
           <div className="mt-14 w-full h-px bg-zinc-800"></div>
