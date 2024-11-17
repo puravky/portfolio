@@ -39,7 +39,7 @@ export default function Page() {
             occasionally doodling / sketching.
           </p>
           <p className="">
-            some of my recent achievements include: <br />
+            some of my recent achievements includes: <br />
             <div className="flex bg-zinc-100 dark:bg-zinc-900 rounded-md py-[1px] mt-6 items-center justify-between">
               <div className="">
                 <p className="ml-5">
