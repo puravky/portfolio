@@ -2,6 +2,7 @@ import Image from "next/image";
 import { socialLinks } from "./config";
 import Link from "next/link";
 import Particles from "./components/particle";
+import CurrentDateTimeGMT from "./components/date";
 
 export default function Page() {
   return (
@@ -102,6 +103,9 @@ export default function Page() {
             </a>
             .
           </p>
+          <div className="text-gray-400 text-sm">
+            <CurrentDateTimeGMT />
+          </div>
         </div>
       </section>
     </div>
