@@ -2,6 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+export const metadata = {
+  title: "blink-arena",
+  description: "blink-arena",
+};
+
 const BlinkArena = () => {
   return (
     <div>
