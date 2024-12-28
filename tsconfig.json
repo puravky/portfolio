@@ -36,7 +36,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "app/spotify-token-script/get-token.js"  ],
   "exclude": [
     "node_modules"
   ]

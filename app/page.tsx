@@ -3,6 +3,7 @@ import { socialLinks } from "./config";
 import Link from "next/link";
 import Particles from "./components/particle";
 import CurrentDateTimeGMT from "./components/date";
+import { LastVisitorLocation } from "./components/last-visit";
 
 export default function Page() {
   return (
@@ -58,7 +59,7 @@ export default function Page() {
               <div className="">
                 <p className="ml-5">
                   core member at{" "}
-                  <Link href="https://x.com/AthenaF0SS">projects athena</Link>
+                  <Link href="https://x.com/AthenaF0SS">project athena</Link>
                 </p>
               </div>
               <div className="mr-5">| 2024</div>
@@ -105,6 +106,7 @@ export default function Page() {
           </p>
           <div className="text-gray-400 text-sm">
             <CurrentDateTimeGMT />
+            <LastVisitorLocation />
           </div>
         </div>
       </section>
