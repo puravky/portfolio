@@ -105,7 +105,6 @@ export default function Page() {
           </p>
           <div className="text-gray-400 text-sm">
             <CurrentDateTimeGMT />
-            <LastVisitorLocation />
           </div>
         </div>
       </section>
