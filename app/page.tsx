@@ -3,7 +3,6 @@ import { socialLinks } from "./config";
 import Link from "next/link";
 import Particles from "./components/particle";
 import CurrentDateTimeGMT from "./components/date";
-import { LastVisitorLocation } from "./components/last-visit";
 
 export default function Page() {
   return (
