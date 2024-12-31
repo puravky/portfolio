@@ -5,6 +5,7 @@ import Particles from "./components/particle";
 import CurrentDateTimeGMT from "./components/date";
 
 export default function Page() {
+
   return (
     <div className="relative min-h-screen">
       <div className="absolute inset-0 z-0">
@@ -37,7 +38,7 @@ export default function Page() {
             in my spare time, i enjoy reading, writing, learning new things, and
             occasionally doodling / sketching.
           </p>
-          <p className="">
+          <div className="">
             some of my recent achievements / experiences includes: <br />
             <div className="flex tracking-tighter bg-zinc-100 dark:bg-zinc-900 rounded-md py-[1px] mt-6 items-center justify-between">
               <div className="">
@@ -58,7 +59,9 @@ export default function Page() {
               <div className="">
                 <p className="ml-5">
                   core member at{" "}
-                  <Link href="https://x.com/AthenaF0SS">project athena</Link>
+                  <Link target="_" href="https://x.com/AthenaF0SS">
+                    project athena
+                  </Link>
                 </p>
               </div>
               <div className="mr-5">| 2024</div>
@@ -80,14 +83,17 @@ export default function Page() {
               <div className="">
                 <p className="ml-5">
                   contribution in{" "}
-                  <Link href="https://github.com/argoproj/argo-cd/pull/15059">
+                  <Link
+                    target="_"
+                    href="https://github.com/argoproj/argo-cd/pull/15059"
+                  >
                     cncf
                   </Link>
                 </p>
               </div>
               <div className="mr-5">| 2023</div>
             </div>
-          </p>
+          </div>
           <div className="mt-14 w-full h-px bg-zinc-800"></div>
           <p>
             if you're interested in collaborating on building some cool sh*ts,

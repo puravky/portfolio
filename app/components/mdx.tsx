@@ -11,31 +11,57 @@ import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
 import "katex/dist/katex.min.css";
 
-function CustomLink(props) {
+import { AnchorHTMLAttributes, DetailedHTMLProps, HTMLAttributes } from "react";
+
+function CustomLink(
+  props: DetailedHTMLProps<
+    AnchorHTMLAttributes<HTMLAnchorElement>,
+    HTMLAnchorElement
+  >
+) {
   let href = props.href;
-  if (href.startsWith("/")) {
+  if (href && href.startsWith("/")) {
     return (
-      <Link href={href} {...props}>
+      <Link href={href!} {...props}>
         {props.children}
       </Link>
     );
   }
-  if (href.startsWith("#")) {
+  if (href && href.startsWith("#")) {
     return <a {...props} />;
   }
   return <a target="_blank" rel="noopener noreferrer" {...props} />;
 }
 
-function RoundedImage(props) {
-  return <Image alt={props.alt} className="rounded-lg" {...props} />;
+interface RoundedImageProps {
+  alt: string;
+  src: string;
+  width: number;
+  height: number;
 }
 
-function Code({ children, ...props }) {
-  let codeHTML = highlight(children);
+function RoundedImage({ alt, ...props }: RoundedImageProps) {
+  return <Image alt={alt} className="rounded-lg" {...props} />;
+}
+
+function Code({
+  children,
+  ...props
+}: DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> & {
+  children?: React.ReactNode;
+}) {
+  let codeHTML = highlight(children as string);
   return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />;
 }
 
-function Table({ data }) {
+interface TableProps {
+  data: {
+    headers: string[];
+    rows: string[][];
+  };
+}
+
+function Table({ data }: TableProps) {
   let headers = data.headers.map((header, index) => (
     <th key={index}>{header}</th>
   ));
@@ -56,11 +82,21 @@ function Table({ data }) {
   );
 }
 
-function Strikethrough(props) {
+function Strikethrough(
+  props: DetailedHTMLProps<
+    React.DelHTMLAttributes<HTMLModElement>,
+    HTMLModElement
+  >
+) {
   return <del {...props} />;
 }
 
-function Callout(props) {
+interface CalloutProps {
+  emoji: React.ReactNode;
+  children: React.ReactNode;
+}
+
+function Callout(props: CalloutProps) {
   return (
     <div className="px-4 py-3 bg-[#F7F7F7] dark:bg-[#181818] rounded p-1 text-sm flex items-center text-neutral-900 dark:text-neutral-100 mb-8">
       <div className="flex items-center w-4 mr-4">{props.emoji}</div>
@@ -69,7 +105,11 @@ function Callout(props) {
   );
 }
 
-function slugify(str) {
+interface Slugify {
+  (str: string): string;
+}
+
+const slugify: Slugify = (str) => {
   return str
     .toString()
     .toLowerCase()
@@ -78,11 +118,15 @@ function slugify(str) {
     .replace(/&/g, "-and-")
     .replace(/[^\w\-]+/g, "")
     .replace(/\-\-+/g, "-");
+};
+
+interface HeadingProps {
+  children?: React.ReactNode;
 }
 
-function createHeading(level) {
-  const Heading = ({ children }) => {
-    let slug = slugify(children);
+function createHeading(level: number) {
+  const Heading = ({ children }: HeadingProps) => {
+    let slug = slugify(children ? children.toString() : "");
     return React.createElement(
       `h${level}`,
       { id: slug },
@@ -119,10 +163,16 @@ let components = {
   Callout,
 };
 
-export function CustomMDX(props) {
+interface CustomMDXProps {
+  components?: Record<string, React.ComponentType<any>>;
+  [key: string]: any;
+}
+
+export function CustomMDX(props: CustomMDXProps) {
   return (
     <MDXRemote
       {...props}
+      source={props.source}
       components={{ ...components, ...(props.components || {}) }}
       options={{
         mdxOptions: {

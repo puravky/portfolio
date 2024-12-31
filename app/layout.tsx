@@ -45,7 +45,11 @@ export const metadata: Metadata = {
   },
 };
 
-const cx = (...classes) => classes.filter(Boolean).join(" ");
+interface ClassNames {
+  (...classes: (string | boolean | undefined)[]): string;
+}
+
+const cx: ClassNames = (...classes) => classes.filter(Boolean).join(" ");
 
 export default function RootLayout({
   children,
@@ -53,7 +57,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={cx(GeistSans.variable, GeistMono.variable)}>
+    <html
+      lang="en"
+      className={cx(GeistSans.variable, GeistMono.variable)}
+      suppressHydrationWarning={true}
+    >
       <head>
         <link
           rel="alternate"
@@ -74,7 +82,10 @@ export default function RootLayout({
           title="JSON Feed"
         />
       </head>
-      <body className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-20 lg:mb-40">
+      <body
+        suppressHydrationWarning={true}
+        className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-20 lg:mb-40"
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

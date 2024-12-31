@@ -7,7 +7,7 @@ export const metadata = {
   description: "portfolio",
 };
 
-const BlinkArena = () => {
+const Portfolio = () => {
   return (
     <div>
       <p className="prose prose-neutral dark:prose-invert">dark mode</p>
@@ -46,4 +46,4 @@ const BlinkArena = () => {
   );
 };
 
-export default BlinkArena;
+export default Portfolio;

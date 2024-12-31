@@ -7,7 +7,7 @@ export const metadata = {
   description: "viralxpost",
 };
 
-const BlinkArena = () => {
+const ViralxPost = () => {
   return (
     <div>
       <Image
@@ -19,44 +19,46 @@ const BlinkArena = () => {
       />
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          introducing viralxpost: let our ai tool help you create to engaging
+          Introducing Viralxpost: let our AI tool help you create engaging
           content that breaks through the noise and gets you seen by the right
           people.
         </p>
         <p>
-          this project was created in collaboration with one of my childhood
-          developer friend{" "}
+          This project was created in collaboration with one of my childhood
+          developer friends,{" "}
           <Link target="_" href="https://x.com/near0lx/">
-            pawan,
+            Pawan,
           </Link>{" "}
-          before attending the solana hacker house as we needed a project to
+          before attending the Solana Hacker House, as we needed a project to
           showcase at the event to everyone.
         </p>
         <p>
-          the code is open-sourced and available on{" "}
+          The code is open-sourced and available on{" "}
           <Link target="_" href="https://github.com/viralxpost/viralxpost-web">
-            github
+            GitHub
           </Link>
           , deployed on{" "}
           <Link target="_" href="https://vercel.com">
-            vercel
+            Vercel
           </Link>{" "}
           and here’s the{" "}
           <Link target="_" href="https://www.viralxpost.xyz/">
             live link
           </Link>
-          <p>
-            and yes the backend is down as the backend is deployed on{" "}
-            <Link href="https://render.com/">render</Link>, need to upgrade it !
-          </p>
-          <p>
-            skills used : react | mongoose | mongodb | git | github |
-            tailwindcss | typescript | node.js | express.js | docker.
-          </p>
+          .
+        </p>
+        <p>
+          And yes, the backend is down as it is deployed on{" "}
+          <Link href="https://render.com/">Render</Link>. It needs to be
+          upgraded!
+        </p>
+        <p>
+          <strong>Skills used:</strong> React, Mongoose, MongoDB, Git, GitHub,
+          TailwindCSS, TypeScript, Node.js, Express.js, Docker.
         </p>
       </div>
     </div>
   );
 };
 
-export default BlinkArena;
+export default ViralxPost;

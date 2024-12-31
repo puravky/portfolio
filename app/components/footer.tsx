@@ -13,7 +13,12 @@ import { metaData, socialLinks } from "app/config";
 
 const YEAR = new Date().getFullYear();
 
-function SocialLink({ href, icon: Icon }) {
+interface SocialLinkProps {
+  href: string;
+  icon: React.ComponentType;
+}
+
+function SocialLink({ href, icon: Icon }: SocialLinkProps) {
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
       <Icon />
