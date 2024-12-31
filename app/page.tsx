@@ -1,11 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import { socialLinks } from "./config";
 import Link from "next/link";
 import Particles from "./components/particle";
 import CurrentDateTimeGMT from "./components/date";
+import { useEffect, useState } from "react";
+import LoadingScreen from "./components/loading";
 
 export default function Page() {
-
   return (
     <div className="relative min-h-screen">
       <div className="absolute inset-0 z-0">
