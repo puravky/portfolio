@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <>
       <h1 className="mb-8 text-2xl font-medium tracking-tight">
-        highlights tweets
+        highlighted tweets
       </h1>
 
       <div className="mb-4">
