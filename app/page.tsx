@@ -5,8 +5,7 @@ import { socialLinks } from "./config";
 import Link from "next/link";
 import Particles from "./components/particle";
 import CurrentDateTimeGMT from "./components/date";
-import { useEffect, useState } from "react";
-import LoadingScreen from "./components/loading";
+import Github from "./components/github";
 
 export default function Page() {
   return (
@@ -97,7 +96,10 @@ export default function Page() {
               <div className="mr-5">| 2023</div>
             </div>
           </div>
-          <div className="mt-14 w-full h-px bg-zinc-800"></div>
+          <div className="mt-9">
+            <Github />
+          </div>
+          <div className="mt-9 w-full h-px bg-zinc-800"></div>
           <p>
             if you're interested in collaborating on building some cool sh*ts,
             feel free to dm me on <Link href={socialLinks.twitter}>x</Link> or
