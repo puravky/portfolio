@@ -84,7 +84,7 @@ export default function RootLayout({
       </head>
       <body
         suppressHydrationWarning={true}
-        className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-20 lg:mb-40"
+        className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-20 lg:mb-40 lowercase"
       >
         <ThemeProvider
           attribute="class"
