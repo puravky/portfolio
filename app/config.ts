@@ -12,5 +12,5 @@ export const socialLinks = {
   github: "https://github.com/AvhiMaz",
   instagram: "https://www.instagram.com/avhidotsol",
   linkedin: "https://www.linkedin.com/in/avhi-maz/",
-  email: "mailto:dev@avhimazumder5@gmail.com",
+  email: "mailto:avhimazumder5@gmail.com",
 };
