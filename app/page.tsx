@@ -7,6 +7,7 @@ import Particles from "./components/particle";
 import CurrentDateTimeGMT from "./components/date";
 import Github from "./components/github";
 import { Slide } from "./components/animations/Slide";
+import { Skills } from "./components/skills";
 
 export default function Page() {
   return (
@@ -30,7 +31,7 @@ export default function Page() {
           </a>
 
           <h1 className="mb-8 text-2xl font-medium tracking-tight">
-            developer based in india.
+            i use arch btw.
           </h1>
           <div className="prose prose-neutral dark:prose-invert">
             <p>
@@ -42,7 +43,10 @@ export default function Page() {
               in my spare time, i enjoy reading, writing, learning new things,
               and occasionally doodling / sketching.
             </p>
-            <div className="">
+            <div>
+              <Skills />
+            </div>
+            <div className="mt-8">
               some of my recent achievements / experiences includes: <br />
               <div className="flex tracking-tighter bg-zinc-100 dark:bg-zinc-900 rounded-md py-[1px] mt-6 items-center justify-between">
                 <div className="">
