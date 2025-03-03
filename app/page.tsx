@@ -6,44 +6,11 @@ import Link from "next/link";
 import Particles from "./components/particle";
 import CurrentDateTimeGMT from "./components/date";
 import Github from "./components/github";
-import { useEffect, useState } from "react";
 import { Slide } from "./components/animations/Slide";
 
 export default function Page() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center min-h-[50vh]">
-        <h1 className="text-3xl font-medium tracking-tight">
-          build build build
-        </h1>
-        <style jsx>{`
-          @keyframes slideLeft {
-            0% {
-              transform: translateX(50px);
-              opacity: 0;
-            }
-            100% {
-              transform: translateX(0);
-              opacity: 1;
-            }
-          }
-          .animate-slideLeft {
-            animation: slideLeft 1s ease-in-out infinite alternate;
-          }
-        `}</style>
-      </div>
-    );
-  }
-
   return (
-    <Slide delay={0.2}>
+    <Slide delay={0.5}>
       <div className="relative min-h-screen">
         <div className="absolute inset-0 z-0">
           <Particles />
