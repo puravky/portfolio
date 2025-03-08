@@ -7,7 +7,7 @@ import Particles from "./components/particle";
 import CurrentDateTimeGMT from "./components/date";
 import Github from "./components/github";
 import { Slide } from "./components/animations/Slide";
-import { Skills } from "./components/skills";
+import Skills from "./components/skills";
 
 export default function Page() {
   return (
