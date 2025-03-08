@@ -43,6 +43,9 @@ export default function Page() {
               in my spare time, i enjoy reading, writing, learning new things,
               and occasionally doodling / sketching.
             </p>
+            <Link href="https://proximal-reaper-8ea.notion.site/avhi-proof-of-work-1afcb21267e48041a4d0fb71d99706f6">
+              <p className="text-blue-600">some of my proof of works</p>
+            </Link>
             <div>
               <Skills />
             </div>
