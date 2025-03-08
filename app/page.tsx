@@ -43,67 +43,75 @@ export default function Page() {
               in my spare time, i enjoy reading, writing, learning new things,
               and occasionally doodling / sketching.
             </p>
-            <Link href="https://proximal-reaper-8ea.notion.site/avhi-proof-of-work-1afcb21267e48041a4d0fb71d99706f6">
+            <Link
+              target="_"
+              href="https://proximal-reaper-8ea.notion.site/avhi-proof-of-work-1afcb21267e48041a4d0fb71d99706f6"
+            >
               <p className="text-blue-600">some of my proof of works</p>
             </Link>
             <div>
               <Skills />
             </div>
             <div className="mt-8">
-              some of my recent achievements / experiences includes: <br />
-              <div className="flex tracking-tighter bg-zinc-100 dark:bg-zinc-900 rounded-md py-[1px] mt-6 items-center justify-between">
-                <div className="">
-                  <p className="ml-5">
-                    won $1000 grant from{" "}
-                    <Link
-                      target="_"
-                      href="https://x.com/avhidotsol/status/1852357389170688162"
-                    >
-                      superteam
-                    </Link>
+              some of my recent achievements / experiences: <br />
+              <div className="flex tracking-tight rounded-md py-0 mt-4 items-center space-x-4">
+                <Image
+                  src="/turbine.png"
+                  width={48}
+                  height={48}
+                  alt="turbine"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
+                <div>
+                  <p className="font-semibold">
+                    solanaturbin3 // builder.
+                    <span className="text-gray-400 ml-2">mar 2025</span>
+                  </p>
+                  <p className="tracking-tight text-sm text-gray-400">
+                    successfully graduated builders' cohort and also ship
+                    capstone.
                   </p>
                 </div>
-                <div className="mr-5">| 2024</div>
+              </div>
+              <div className="flex tracking-tight rounded-md py-0 mt-2 items-center space-x-4">
+                <Image
+                  src="/superteam.png"
+                  width={48}
+                  height={48}
+                  alt="superteam"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
+                <div>
+                  <p className="font-semibold">
+                    superteam // grant recipient
+                    <span className="text-gray-400 ml-2">nov 2024</span>
+                  </p>
+                  <p className="tracking-tight text-sm text-gray-400">
+                    Received a $1000 grant from the Solana Foundation for
+                    creating a product using Solana Blinks.
+                  </p>
+                </div>
+              </div>
+              <div className="flex tracking-tight rounded-md py-0 mt-0 items-center space-x-4">
+                <Image
+                  src="/athena.png"
+                  width={48}
+                  height={48}
+                  alt="superteam"
+                  className="w-12 h-12 rounded-full object-cover border border-gray-500"
+                />
+                <div>
+                  <p className="font-semibold">
+                    project athena // core member.
+                    <span className="text-gray-400 ml-2">nov 2024</span>
+                  </p>
+                  <p className="tracking-tight text-sm text-gray-400">
+                    a community of crack devs shiiping and developing day and
+                    nights
+                  </p>
+                </div>
               </div>
               <br />
-              <div className="bg-zinc-100 tracking-tighter dark:bg-zinc-900 rounded-md py-[1px] flex items-center justify-between">
-                <div className="">
-                  <p className="ml-5">
-                    core member at{" "}
-                    <Link target="_" href="https://x.com/AthenaF0SS">
-                      project athena
-                    </Link>
-                  </p>
-                </div>
-                <div className="mr-5">| 2024</div>
-              </div>
-              <br />
-              <div className="bg-zinc-100 tracking-tighter  dark:bg-zinc-900 rounded-md py-[1px] flex items-center justify-between">
-                <div className="">
-                  <p className="ml-5">
-                    co-founded{" "}
-                    <Link target="_" href="https://viralxpost.xyz">
-                      viralxpost
-                    </Link>
-                  </p>
-                </div>
-                <div className="mr-5">| 2024</div>
-              </div>
-              <br />
-              <div className="bg-zinc-100 tracking-tighter dark:bg-zinc-900 rounded-md py-[1px] flex items-center justify-between">
-                <div className="">
-                  <p className="ml-5">
-                    contribution in{" "}
-                    <Link
-                      target="_"
-                      href="https://github.com/argoproj/argo-cd/pull/15059"
-                    >
-                      cncf
-                    </Link>
-                  </p>
-                </div>
-                <div className="mr-5">| 2023</div>
-              </div>
             </div>
             <div className="mt-9">
               <Github />
