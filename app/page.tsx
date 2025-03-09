@@ -43,12 +43,21 @@ export default function Page() {
               in my spare time, i enjoy reading, writing, learning new things,
               and occasionally doodling / sketching.
             </p>
-            <Link
-              target="_"
-              href="https://proximal-reaper-8ea.notion.site/avhi-proof-of-work-1afcb21267e48041a4d0fb71d99706f6"
-            >
-              <p className="text-blue-600">some of my proof of works</p>
-            </Link>
+            <div className="flex gap-3 mb-7 mt-7">
+              <Link
+                target="_"
+                href="https://proximal-reaper-8ea.notion.site/avhi-proof-of-work-1afcb21267e48041a4d0fb71d99706f6"
+              >
+                <button className="rounded-lg text-center px-4 py-2 border border-transparent border-zinc-200  dark:border-zinc-700 duration-100 text-sm font-medium">
+                  proof of works
+                </button>
+              </Link>
+              <Link target="_" href="https://cal.com/avhidotsol-wsblbp/meet">
+                <button className="rounded-lg text-center px-4 py-2 border border-transparent border-zinc-200  dark:border-zinc-700 duration-100 text-sm font-medium">
+                  book a meet
+                </button>
+              </Link>
+            </div>
             <div>
               <Skills />
             </div>
@@ -56,7 +65,7 @@ export default function Page() {
               some of my recent achievements / experiences: <br />
               <div className="flex tracking-tight rounded-md py-0 mt-4 items-center space-x-4">
                 <Image
-                  src="/turbine.png"
+                  src="/turbine.jpg"
                   width={48}
                   height={48}
                   alt="turbine"
@@ -75,7 +84,7 @@ export default function Page() {
               </div>
               <div className="flex tracking-tight rounded-md py-0 mt-2 items-center space-x-4">
                 <Image
-                  src="/superteam.png"
+                  src="/superteam.jpg"
                   width={48}
                   height={48}
                   alt="superteam"
@@ -113,7 +122,7 @@ export default function Page() {
               </div>
               <br />
             </div>
-            <div className="mt-9">
+            <div className="">
               <Github />
             </div>
             <div className="mt-9 w-full h-px bg-zinc-800"></div>
