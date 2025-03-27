@@ -2,17 +2,13 @@ const Skills = () => {
   const technologies = [
     "next.js",
     "typescript",
-    "javascript",
-    "solana/web3.js",
     "rust",
     "anchor",
-    "node",
-    "express",
-    "mongodb",
+    "mern",
     "prisma",
     "docker",
     "git",
-    "cpp",
+    "bankrun",
   ];
 
   return (
