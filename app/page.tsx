@@ -80,7 +80,9 @@ export default function Page() {
                 />
                 <div>
                   <p className="font-semibold">
-                    solanaturbin3 ~ grad
+                    <Link className="!font-semibold" href="/experience/turbine">
+                      solanaturbin3 ~ grad
+                    </Link>
                     <span className="text-gray-400 ml-2">mar 2025</span>
                   </p>
                   <p className="tracking-tight text-sm text-gray-400">
@@ -99,7 +101,12 @@ export default function Page() {
                 />
                 <div>
                   <p className="font-semibold">
-                    superteam ~ member ~ grant recipient (2x)
+                    <Link
+                      className="!font-semibold"
+                      href="/experience/superteam"
+                    >
+                      superteam ~ member ~ grant recipient (2x)
+                    </Link>
                     <span className="text-gray-400 ml-2">mar 2025</span>
                   </p>
                   <p className="tracking-tight text-sm text-gray-400">
@@ -117,7 +124,9 @@ export default function Page() {
                 />
                 <div>
                   <p className="font-semibold">
-                    project athena ~ core member
+                    <Link className="!font-semibold" href="/experience/athena">
+                      project athena ~ core member
+                    </Link>
                     <span className="text-gray-400 ml-2">nov 2024</span>
                   </p>
                   <p className="tracking-tight text-sm text-gray-400">
