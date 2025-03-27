@@ -12,7 +12,7 @@ export default function YearButton({
   return (
     <button
       onClick={onClick}
-      className={`rounded-lg text-center px-4 py-2 border border-transparent border-zinc-200  dark:border-zinc-700 duration-100 text-sm font-medium ${
+      className={`rounded-lg text-center px-4 py-2 border border-transparent border-zinc-200  dark:border-zinc-700 text-sm font-medium cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-md ${
         year === currentYear ? "  " : " "
       }`}
     >

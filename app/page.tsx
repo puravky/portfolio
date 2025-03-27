@@ -35,9 +35,16 @@ export default function Page() {
           </h1>
           <div className="prose prose-neutral dark:prose-invert">
             <p>
-              i'm a 21-year-old developer and an undergraduate student with a
-              passion for building cool products, with a strong understanding of
-              web2 / web3 concepts.
+              I'm a 21-year-old developer a member of{" "}
+              <Link target="_" href="https://superteam.fun/">
+                superteam
+              </Link>{" "}
+              and a graduate of the{" "}
+              <Link target="_" href="https://turbin3.com/">
+                solanaturbine
+              </Link>{" "}
+              builders' cohort with a passion for building cool products, with a
+              strong understanding of Web2/Web3 concepts.
             </p>
             <p>
               in my spare time, i enjoy reading, writing, learning new things,
@@ -73,11 +80,11 @@ export default function Page() {
                 />
                 <div>
                   <p className="font-semibold">
-                    solanaturbin3 // builder.
+                    solanaturbin3 ~ grad
                     <span className="text-gray-400 ml-2">mar 2025</span>
                   </p>
                   <p className="tracking-tight text-sm text-gray-400">
-                    successfully graduated builders' cohort and also ship
+                    successfully graduated builders' cohort and also shipped
                     capstone.
                   </p>
                 </div>
@@ -92,12 +99,11 @@ export default function Page() {
                 />
                 <div>
                   <p className="font-semibold">
-                    superteam // grant recipient
-                    <span className="text-gray-400 ml-2">nov 2024</span>
+                    superteam ~ member ~ grant recipient (2x)
+                    <span className="text-gray-400 ml-2">mar 2025</span>
                   </p>
                   <p className="tracking-tight text-sm text-gray-400">
-                    Received a $1000 grant from the Solana Foundation for
-                    creating a product using Solana Blinks.
+                    Received a total of $3000 grant from the superteam.
                   </p>
                 </div>
               </div>
@@ -111,7 +117,7 @@ export default function Page() {
                 />
                 <div>
                   <p className="font-semibold">
-                    project athena // core member.
+                    project athena ~ core member
                     <span className="text-gray-400 ml-2">nov 2024</span>
                   </p>
                   <p className="tracking-tight text-sm text-gray-400">
