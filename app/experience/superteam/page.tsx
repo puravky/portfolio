@@ -15,7 +15,7 @@ export default function Page() {
 
         <section className="relative z-10">
           <div className="prose prose-neutral dark:prose-invert">
-            <p className="mb-8 text-2xl font-medium tracking-tight">
+            <p className="text-2xl font-medium tracking-tight">
               superteam ~ member ~ grant recipient (2x)
             </p>
 

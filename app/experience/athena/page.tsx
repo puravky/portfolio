@@ -2,6 +2,8 @@
 
 import { Slide } from "@/components/animations/Slide";
 import Particles from "@/components/particle";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -13,12 +15,26 @@ export default function Page() {
 
         <section className="relative z-10">
           <div className="prose prose-neutral dark:prose-invert">
-            <p>project athena ~ core member</p>
+            <p className="text-2xl font-medium tracking-tight">
+              project athena ~ core member
+            </p>
 
-            <div className="flex gap-3 mb-7 mt-7">hi hi</div>
-
-            {/* <div className="mt-9 w-full h-px bg-zinc-800"></div> */}
-            <p>hello</p>
+            <div>
+              <p>
+                Proud to be a Core Member at Project Athena ~ a thriving
+                community of cracked devs building and experimenting at the
+                bleeding edge of everthing.
+                <br />
+              </p>
+              <Image
+                src="/build.png"
+                alt="build"
+                width="720"
+                height="240"
+                className="rounded"
+              />
+              <p className="text-center">BUILD BUILD BUILD</p>
+            </div>
           </div>
         </section>
       </div>
