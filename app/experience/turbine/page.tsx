@@ -41,8 +41,7 @@ export default function Page() {
                 <source src="/projects/nestfolio.mp4" type="video/mp4" />
               </video>
               <p>
-                Nestfolio: an ai-powered dao governance. ~ this project also won
-                d grant from solana foundation x coindcx. ~{" "}
+                Nestfolio: an ai-powered dao governance. ~ this project also won grant from solana foundation x coindcx. ~{" "}
                 <Link
                   className=""
                   href="https://www.avhimaz.in/projects/nestfolio"
