@@ -2,10 +2,21 @@
 
 import { Slide } from "@/components/animations/Slide";
 import Particles from "@/components/particle";
-import Image from "next/image";
+import { Skeleton } from "@/components/skeleton";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Page() {
+  const [showVideo, setShowVideo] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowVideo(true);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Slide delay={0.5}>
       <div className="relative min-h-screen">
@@ -29,19 +40,26 @@ export default function Page() {
                 an AI DAO Governance.
                 <br />
               </p>
-              <video
-                autoPlay
-                loop
-                muted
-                width="720"
-                height="240"
-                preload="none"
-                className="rounded"
-              >
-                <source src="/projects/nestfolio.mp4" type="video/mp4" />
-              </video>
+              <div className="h-[365px]">
+                {!showVideo ? (
+                  <Skeleton className="h-[380px] w-[640px]" />
+                ) : (
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    width="720"
+                    height="240"
+                    preload="none"
+                    className="rounded"
+                  >
+                    <source src="/projects/nestfolio.mp4" type="video/mp4" />
+                  </video>
+                )}
+              </div>
               <p>
-                Nestfolio: an ai-powered dao governance. ~ this project also won grant from solana foundation x coindcx. ~{" "}
+                Nestfolio: an ai-powered dao governance. ~ this project also won
+                grant from solana foundation x coindcx. ~{" "}
                 <Link
                   className=""
                   href="https://www.avhimaz.in/projects/nestfolio"

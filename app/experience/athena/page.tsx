@@ -2,10 +2,21 @@
 
 import { Slide } from "@/components/animations/Slide";
 import Particles from "@/components/particle";
+import { Skeleton } from "@/components/skeleton";
 import Image from "next/image";
-import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Page() {
+  const [showImage, setShowImage] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowImage(true);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Slide delay={0.5}>
       <div className="relative min-h-screen">
@@ -26,13 +37,20 @@ export default function Page() {
                 bleeding edge of everthing.
                 <br />
               </p>
-              <Image
-                src="/build.png"
-                alt="build"
-                width="720"
-                height="240"
-                className="rounded"
-              />
+              <div className="h-[365px]">
+                {!showImage ? (
+                  <Skeleton className="h-[380px] w-[640px]" />
+                ) : (
+                  <Image
+                    src="/build.png"
+                    alt="build"
+                    width="720"
+                    height="240"
+                    className="rounded"
+                  />
+                )}
+              </div>
+
               <p className="text-center">BUILD BUILD BUILD</p>
             </div>
           </div>

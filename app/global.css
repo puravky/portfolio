@@ -149,3 +149,13 @@ table {
 .title {
   text-wrap: balance;
 }
+
+@keyframes shimmer {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+.shimmer {
+  animation: shimmer 1.5s infinite ease-in-out;
+}
