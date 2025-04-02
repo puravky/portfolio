@@ -40,9 +40,9 @@ export default function Page() {
                 an AI DAO Governance.
                 <br />
               </p>
-              <div className="h-[365px]">
+              <div className="h-50 lg:h-[365px]">
                 {!showVideo ? (
-                  <Skeleton className="h-[380px] w-[640px]" />
+                  <Skeleton className="h-44 lg:h-[380px] lg:w-[640px]" />
                 ) : (
                   <video
                     autoPlay
