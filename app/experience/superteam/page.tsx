@@ -34,8 +34,9 @@ export default function Page() {
               <p>
                 got the opportunity to become a Superteam member and 2x grant
                 recipient. <br /> I’ve had the opportunity to work on innovative
-                projects in the Solana ecosystem, receiving a total of $3,000 in
-                grants for my contributions.
+                projects in the Solana ecosystem, receiving a total of{" "}
+                <span className="inline-block blur-sm">$X,XXX</span> in grants
+                for my contributions.
                 <br />
               </p>
               <div className="h-50 lg:h-[365px]">

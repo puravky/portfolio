@@ -110,7 +110,7 @@ export default function Page() {
                     <span className="text-gray-400 ml-2">mar 2025</span>
                   </p>
                   <p className="tracking-tight text-sm text-gray-400">
-                    Received a total of $3000 grant from the superteam.
+                    Received a total of <span className="blur-sm inline-block">$XXXX</span> grant from the superteam.
                   </p>
                 </div>
               </div>
