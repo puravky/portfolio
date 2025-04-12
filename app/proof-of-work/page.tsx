@@ -35,13 +35,13 @@ export default function Projects() {
           }
         `}
       </style>
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">projects</h1>
+      <h1 className="mb-8 text-2xl font-medium tracking-tight">proof of work</h1>
       <div>
         {sortedProjects.map((project) => (
           <Link
             key={project.slug}
             className="flex flex-col space-y-4 mb-4 transition-opacity duration-200 hover:opacity-80"
-            href={`/projects/${project.slug}`}
+            href={`/proof-of-work/${project.slug}`}
           >
             <div className="flex flex-col bg-zinc-100 dark:bg-zinc-900 rounded-md py-4">
               <div className="flex justify-between items-center ml-5 mr-5">

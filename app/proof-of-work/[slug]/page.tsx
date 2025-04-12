@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CustomMDX } from "app/components/mdx"; // Assuming this is the MDX renderer you're using
-import { formatDate, getProjects } from "app/lib/projects"; // Assuming this is the function to fetch project data
+import { getProjects } from "app/lib/projects"; // Assuming this is the function to fetch project data
 import { metaData } from "app/config";
 
 export async function generateStaticParams() {
@@ -39,7 +39,7 @@ export async function generateMetadata({
       title,
       description,
       type: "website",
-      url: `${metaData.baseUrl}/projects/${project.slug}`,
+      url: `${metaData.baseUrl}/proof-of-work/${project.slug}`,
       images: [
         {
           url: ogImage,
