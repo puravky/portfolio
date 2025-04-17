@@ -8,6 +8,7 @@ import CurrentDateTimeGMT from "./components/date";
 import Github from "./components/github";
 import { Slide } from "./components/animations/Slide";
 import Skills from "./components/skills";
+import { FaCircle } from "react-icons/fa6";
 
 export default function Page() {
   return (
@@ -30,9 +31,13 @@ export default function Page() {
             />
           </a>
 
-          <h1 className="mb-8 text-2xl font-medium tracking-tight">
+          <h1 className="mb-2 text-2xl font-medium tracking-tight">
             engineer ~ i use arch btw.
           </h1>
+          <p className="flex gap-2 text-sm tracking-tighter text-gray-400">
+            open for work
+            <FaCircle className="mt-[4px] text-green-500 animate-pulse drop-shadow-[0_0_6px_rgba(34,197,94,0.8)] w-3 h-3"/>
+          </p>
           <div className="prose prose-neutral dark:prose-invert">
             <p>
               I'm a 21-year-old developer a member of{" "}
@@ -51,15 +56,7 @@ export default function Page() {
               and occasionally doodling / sketching.
             </p>
             <div className="flex gap-3 mb-7 mt-7">
-              <Link
-                target="_"
-                href="https://proximal-reaper-8ea.notion.site/avhi-proof-of-work-1afcb21267e48041a4d0fb71d99706f6"
-              >
-                <button className="rounded-lg text-center px-4 py-2 border border-transparent border-zinc-200  dark:border-zinc-700 text-sm font-medium cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-                  proof of works
-                </button>
-              </Link>
-              <Link target="_" href="https://cal.com/avhidotsol-wsblbp/meet">
+            <Link target="_" href="https://cal.com/avhidotsol-wsblbp/meet">
                 <button className="rounded-lg text-center px-4 py-2 border border-transparent border-zinc-200  dark:border-zinc-700 text-sm font-medium cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                   book a meet
                 </button>
