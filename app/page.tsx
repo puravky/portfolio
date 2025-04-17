@@ -35,7 +35,7 @@ export default function Page() {
             engineer ~ i use arch btw.
           </h1>
           <p
-            className="flex items-center gap-2 text-sm tracking-tighter text-gray-400 hover:underline"
+            className="flex items-center gap-2 text-sm tracking-tighter text-gray-400"
           >
             open for work
             <FaCircle className="text-green-500 animate-pulse drop-shadow-[0_0_6px_rgba(34,197,94,0.8)] w-3 h-3" />
