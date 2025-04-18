@@ -8,7 +8,8 @@ const Skills = () => {
     "prisma",
     "docker",
     "git",
-    "bankrun",
+    "linux",
+    "testing",
   ];
 
   return (

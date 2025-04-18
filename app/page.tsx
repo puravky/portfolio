@@ -34,13 +34,6 @@ export default function Page() {
           <h1 className="mb-2 text-2xl font-medium tracking-tight">
             engineer ~ i use arch btw.
           </h1>
-          <p
-            className="flex items-center gap-2 text-sm tracking-tighter text-gray-400"
-          >
-            open for work
-            <FaCircle className="text-green-500 animate-pulse drop-shadow-[0_0_6px_rgba(34,197,94,0.8)] w-3 h-3" />
-
-          </p>          
           <div className="prose prose-neutral dark:prose-invert">
             <p>
               I'm a 21-year-old developer a member of{" "}

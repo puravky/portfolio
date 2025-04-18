@@ -1,10 +1,10 @@
 export const metaData = {
-  baseUrl: "https://avhimaz.in/",
-  title: "avhi maz",
+  baseUrl: "https://avhidotsol.xyz/",
+  title: "avhi.sol",
   name: "avhi",
   ogImage: "/opengraph-image.png",
   description:
-    "full stack developer crafting innovative solutions with a passion for clean code.",
+    "a developer crafting innovative solutions with a passion for clean code.",
 };
 
 export const socialLinks = {
