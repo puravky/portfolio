@@ -62,7 +62,7 @@ export default function Page() {
                 grant from solana foundation x coindcx. ~{" "}
                 <Link
                   className=""
-                  href="https://www.avhimaz.in/projects/nestfolio"
+                  href="https://www.avhidotsol.xyz/projects/nestfolio"
                 >
                   read more here
                 </Link>

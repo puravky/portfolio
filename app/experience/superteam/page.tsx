@@ -63,7 +63,7 @@ export default function Page() {
                 blinks. ~{" "}
                 <Link
                   className=""
-                  href="https://www.avhimaz.in/projects/blink-arena"
+                  href="https://www.avhidotsol.xyz/projects/blink-arena"
                 >
                   read more here
                 </Link>
@@ -94,7 +94,7 @@ export default function Page() {
                 dao governance. ~{" "}
                 <Link
                   className=""
-                  href="https://www.avhimaz.in/projects/nestfolio"
+                  href="https://www.avhidotsol.xyz/projects/nestfolio"
                 >
                   read more here
                 </Link>
