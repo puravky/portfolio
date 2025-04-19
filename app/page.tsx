@@ -8,7 +8,7 @@ import CurrentDateTimeGMT from "./components/date";
 import Github from "./components/github";
 import { Slide } from "./components/animations/Slide";
 import Skills from "./components/skills";
-import { FaCircle } from "react-icons/fa6";
+import {  FaLightbulb } from "react-icons/fa6";
 
 export default function Page() {
   return (
@@ -148,8 +148,16 @@ export default function Page() {
               </a>
               .
             </p>
-            <div className="text-gray-400 text-sm">
-              <CurrentDateTimeGMT />
+            <div className="text-gray-400 text-sm items-center flex-none lg:flex w-full gap-[220px]">
+              <span className="w-[200px]">
+                <CurrentDateTimeGMT />
+              </span>
+              
+            <p className="flex items-center text-sm gap-1 text-gray-500">
+              <FaLightbulb className="text-yellow-400 animate-pulse drop-shadow-[0_0_8px_rgba(253,224,71,0.8)]" />
+              Last updated on April 19, 2025
+            </p>
+
             </div>
           </div>
         </section>
