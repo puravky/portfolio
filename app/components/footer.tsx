@@ -13,14 +13,18 @@ import { metaData, socialLinks } from "app/config";
 
 const YEAR = new Date().getFullYear();
 
-interface SocialLinkProps {
+type SocialLinkProps = {
   href: string;
   icon: React.ComponentType;
-}
+  newTab?: boolean;
+};
 
-function SocialLink({ href, icon: Icon }: SocialLinkProps) {
+function SocialLink({ href, icon: Icon, newTab = true }: SocialLinkProps) {
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer">
+    <a
+      href={href}
+      {...(newTab ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+    >
       <Icon />
     </a>
   );
@@ -34,7 +38,7 @@ function SocialLinks() {
       <SocialLink href={socialLinks.instagram} icon={FaInstagram} />
       <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} />
       <SocialLink href={socialLinks.email} icon={TbMailFilled} />
-      <SocialLink href={socialLinks.resume} icon={PiPaperclipBold} />
+      <SocialLink href={socialLinks.resume} icon={PiPaperclipBold} newTab={false} />
     </div>
   );
 }

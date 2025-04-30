@@ -13,5 +13,5 @@ export const socialLinks = {
   instagram: "https://www.instagram.com/avhidotsol",
   linkedin: "https://www.linkedin.com/in/avhi-maz/",
   email: "mailto:avhimazumder5@gmail.com",
-  resume: "https://avhimaz.github.io/resume/resume.pdf"
+  resume: "/resume"
 };
