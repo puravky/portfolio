@@ -1,6 +1,12 @@
+export const metadata = {
+  title: "resume",
+  description: "resume",
+};
+
+
 export default function Resume() {
   return (
-    <div style={{ height: '100vh' }}>
+    <div className=" h-[68vh] md:h-[78vh] lg:h-[92vh]">
       <iframe
         src="https://avhimaz.github.io/resume/resume.pdf"
         title="Resume PDF"

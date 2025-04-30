@@ -2,8 +2,8 @@ import Link from "next/link";
 import { getProjects } from "app/lib/projects";
 
 export const metadata = {
-  title: "projects",
-  description: "projects",
+  title: "proof of work",
+  description: "proof of work",
 };
 
 export default function Projects() {
