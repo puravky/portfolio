@@ -5,9 +5,9 @@ import {
   FaXTwitter,
   FaGithub,
   FaInstagram,
-  FaRss,
   FaLinkedinIn,
 } from "react-icons/fa6";
+import { PiPaperclipBold } from "react-icons/pi";
 import { TbMailFilled } from "react-icons/tb";
 import { metaData, socialLinks } from "app/config";
 
@@ -34,6 +34,7 @@ function SocialLinks() {
       <SocialLink href={socialLinks.instagram} icon={FaInstagram} />
       <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} />
       <SocialLink href={socialLinks.email} icon={TbMailFilled} />
+      <SocialLink href={socialLinks.resume} icon={PiPaperclipBold} />
     </div>
   );
 }
