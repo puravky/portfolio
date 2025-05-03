@@ -9,6 +9,7 @@ type ProjectMetadata = {
   github?: string;
   liveLink?: string;
   publishedAt: string;
+  category?: string
 };
 
 function parseFrontmatter(fileContent: string) {
@@ -22,7 +23,7 @@ function parseFrontmatter(fileContent: string) {
   frontMatterLines.forEach((line) => {
     let [key, ...valueArr] = line.split(": ");
     let value = valueArr.join(": ").trim();
-    value = value.replace(/^['"](.*)['"]$/, "$1"); // Remove quotes from string values
+    value = value.replace(/^['"](.*)['"]$/, "$1");
     metadata[key.trim() as keyof ProjectMetadata] = value;
   });
 
