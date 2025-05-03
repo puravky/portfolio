@@ -8,7 +8,7 @@ import CurrentDateTimeGMT from "./components/date";
 import Github from "./components/github";
 import { Slide } from "./components/animations/Slide";
 import Skills from "./components/skills";
-import {  FaLightbulb } from "react-icons/fa6";
+import { FaLightbulb } from "react-icons/fa6";
 
 export default function Page() {
   return (
@@ -52,7 +52,7 @@ export default function Page() {
               and occasionally doodling / sketching.
             </p>
             <div className="flex gap-3 mb-7 mt-7">
-            <Link target="_" href="https://cal.com/avhidotsol-wsblbp/meet">
+              <Link target="_" href="https://cal.com/avhidotsol-wsblbp/meet">
                 <button className="rounded-lg text-center px-4 py-2 border border-transparent border-zinc-200  dark:border-zinc-700 text-sm font-medium cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                   book a meet
                 </button>
@@ -152,11 +152,11 @@ export default function Page() {
               <span className="w-[200px]">
                 <CurrentDateTimeGMT />
               </span>
-              
-            <p className="flex items-center text-sm gap-1 text-gray-500">
-              <FaLightbulb className="text-yellow-400 animate-pulse drop-shadow-[0_0_8px_rgba(253,224,71,0.8)]" />
-              Last updated on April 30, 2025
-            </p>
+
+              <p className="flex items-center text-sm gap-1 text-gray-500">
+                <FaLightbulb className="text-yellow-400 animate-pulse drop-shadow-[0_0_8px_rgba(253,224,71,0.8)]" />
+                Last updated on May 3, 2025
+              </p>
 
             </div>
           </div>
