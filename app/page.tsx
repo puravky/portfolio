@@ -53,7 +53,13 @@ export default function Page() {
             </p>
             <div className="flex gap-3 mb-7 mt-7">
               <Link target="_" href="https://cal.com/avhidotsol-wsblbp/meet">
-                <button className="rounded-lg text-center px-4 py-2 border border-transparent border-zinc-200  dark:border-zinc-700 text-sm font-medium cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                <button className=" flex items-center gap-2 rounded-lg text-center px-4 py-2 border border-transparent border-zinc-200  dark:border-zinc-700 text-sm font-medium cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                  <img
+                    src="/icons/google-meet.png"
+                    alt="book a meet"
+                    className="h-5 w-5 flex"
+                  />
+
                   book a meet
                 </button>
               </Link>
@@ -69,7 +75,7 @@ export default function Page() {
                   width={48}
                   height={48}
                   alt="turbine"
-                  className="w-12 h-12 rounded-full object-cover"
+                  className="w-12 h-12 rounded-full object-cover border border-gray-500"
                 />
                 <div>
                   <p className="font-semibold">
@@ -90,7 +96,7 @@ export default function Page() {
                   width={48}
                   height={48}
                   alt="superteam"
-                  className="w-12 h-12 rounded-full object-cover"
+                  className="w-12 h-12 rounded-full object-cover border border-gray-500"
                 />
                 <div>
                   <p className="font-semibold">
@@ -155,13 +161,13 @@ export default function Page() {
 
               <p className="flex items-center text-sm gap-1 text-gray-500">
                 <FaLightbulb className="text-yellow-400 animate-pulse drop-shadow-[0_0_8px_rgba(253,224,71,0.8)]" />
-                Last updated on May 3, 2025
+                Last updated on May 5, 2025
               </p>
 
             </div>
           </div>
-        </section>
-      </div>
-    </Slide>
+        </section >
+      </div >
+    </Slide >
   );
 }
