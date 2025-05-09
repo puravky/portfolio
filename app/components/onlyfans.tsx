@@ -11,7 +11,7 @@ type GeoInfo = {
   timezone: string;
 };
 
-export default function Gotcha() {
+export default function Onlyfans() {
   const [info, setInfo] = useState<GeoInfo | null>(null);
 
   useEffect(() => {
@@ -22,6 +22,7 @@ export default function Gotcha() {
 
   return (
     <div className="h-[300px] lg:h-[450px] flex flex-col items-center justify-center text-center tracking-tighter">
+      <p className='text-2xl mb-10'>just caught you :haha</p>
       {info ? (
         <>
           <p className="text-lg text-red-500">Your IP: <span className="tracking-tighter">{info.ip}</span></p>

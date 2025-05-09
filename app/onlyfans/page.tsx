@@ -1,4 +1,4 @@
-import Admin from "@/components/admin";
+import Onlyfans from "@/components/onlyfans";
 
 export const metadata = {
   title: "admin",
@@ -8,7 +8,7 @@ export const metadata = {
 export default function Page() {
   return (
     <div>
-      <Admin />
+      <Onlyfans />
     </div>
   )
 }
