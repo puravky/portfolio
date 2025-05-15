@@ -31,8 +31,14 @@ export default function Page() {
             />
           </a>
 
-          <h1 className="mb-2 text-2xl font-medium tracking-tight">
-            engineer ~ i use arch btw.
+          <h1 className="mb-2 flex text-2xl font-medium tracking-tight">
+            engineer ~ i use
+            <Image
+              src="/arch-linux.png"
+              width={28}
+              height={28}
+              alt="arch-linux"
+              className="w-7 h-7 ml-2 mr-2 transform transition-transform duration-300 hover:scale-125" />btw.
           </h1>
           <div className="prose prose-neutral dark:prose-invert">
             <p>
@@ -143,7 +149,7 @@ export default function Page() {
             <p>
               if you're interested in collaborating on building some cool sh*ts,
               feel free to dm me on <Link href={socialLinks.twitter}>x</Link> or
-              drop me an <Link href={socialLinks.email}>email</Link>. i will get
+              drop me an <Link href={socialLinks.email}>email</Link> or <Link href="https://cal.com/avhidotsol-wsblbp/meet">book a meet</Link>. i will get
               back to you within 2 business days. i'm always open to new ideas
               and projects!
             </p>
@@ -161,7 +167,7 @@ export default function Page() {
 
               <p className="flex items-center text-sm gap-1 text-gray-500">
                 <FaLightbulb className="text-yellow-400 animate-pulse drop-shadow-[0_0_8px_rgba(253,224,71,0.8)]" />
-                Last updated on May 12, 2025
+                Last updated on May 15, 2025
               </p>
 
             </div>
