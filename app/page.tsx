@@ -135,7 +135,7 @@ export default function Page() {
                     <span className="text-gray-400 ml-2">nov 2024</span>
                   </p>
                   <p className="tracking-tight text-sm text-gray-400">
-                    a community of crack devs shiiping and developing day and
+                    a community of crack devs shipping and developing day and
                     nights
                   </p>
                 </div>
