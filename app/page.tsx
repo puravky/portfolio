@@ -167,7 +167,7 @@ export default function Page() {
 
               <p className="flex items-center text-sm gap-1 text-gray-500">
                 <FaLightbulb className="text-yellow-400 animate-pulse drop-shadow-[0_0_8px_rgba(253,224,71,0.8)]" />
-                Last updated on May 31, 2025
+                Last updated on june 7, 2025
               </p>
 
             </div>
