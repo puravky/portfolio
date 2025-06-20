@@ -77,6 +77,27 @@ export default function Page() {
               some of my recent achievements / experiences: <br />
               <div className="flex tracking-tight rounded-md py-0 mt-4 items-center space-x-4">
                 <Image
+                  src="/pirate.png"
+                  width={48}
+                  height={48}
+                  alt="turbine"
+                  className="w-12 h-12 rounded-full object-cover border border-gray-500"
+                />
+                <div>
+                  <p className="font-semibold">
+                    <Link className="!font-semibold" href="/experience/pirate">
+                      piratecrewfun ~ vibe coder
+                    </Link>
+                    <span className="text-gray-400 ml-2">jun 2025 - present</span>
+                  </p>
+                  <p className="tracking-tight text-sm text-gray-400">
+                    currently dealing with fs and contract stuff
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex tracking-tight rounded-md py-0 mt-4 items-center space-x-4">
+                <Image
                   src="/turbine.jpg"
                   width={48}
                   height={48}
@@ -167,7 +188,7 @@ export default function Page() {
 
               <p className="flex items-center text-sm gap-1 text-gray-500">
                 <FaLightbulb className="text-yellow-400 animate-pulse drop-shadow-[0_0_8px_rgba(253,224,71,0.8)]" />
-                Last updated on june 7, 2025
+                Last updated on june 20, 2025
               </p>
 
             </div>
