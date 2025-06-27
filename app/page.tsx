@@ -31,7 +31,7 @@ export default function Portfolio() {
                 <h3 className="font-medium">piratecrewfun</h3>
                 <span className="text-sm text-gray-500">2025 - present</span>
               </div>
-              <p className="text-gray-600 text-sm">dealing with fe and meteora stuffs.</p>
+              <p className="text-gray-600 text-sm">dealing with fs and meteora stuffs.</p>
             </div>
 
             <div>
@@ -49,7 +49,7 @@ export default function Portfolio() {
                 <span className="text-sm text-gray-500">2025 - present</span>
               </div>
               <p className="text-gray-600 text-sm">
-                building a team a cracked devs, and till now we managed to win $15k+ grants.
+                building a team of cracked devs, and till now we managed to win $15k+ in grants.
               </p>
             </div>
 
