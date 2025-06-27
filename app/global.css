@@ -36,6 +36,7 @@
 
 html {
   min-width: 360px;
+  scroll-behavior: smooth;
 }
 
 .prose {
@@ -68,7 +69,7 @@ html {
   content: "#";
 }
 
-.prose *:hover > .anchor {
+.prose *:hover>.anchor {
   @apply visible;
 }
 
@@ -107,7 +108,7 @@ h6 {
   @apply font-medium;
 }
 
-.prose > :first-child {
+.prose> :first-child {
   /* Override removing top margin, causing layout shift */
   margin-top: 1.25em !important;
   margin-bottom: 1.25em !important;
@@ -118,8 +119,10 @@ pre::-webkit-scrollbar {
 }
 
 pre {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /* Remove Safari input shadow on mobile */
@@ -142,7 +145,7 @@ table {
   white-space: nowrap;
 }
 
-.prose .callout > p {
+.prose .callout>p {
   margin: 0 !important;
 }
 
@@ -151,9 +154,17 @@ table {
 }
 
 @keyframes shimmer {
-  0% { opacity: 1; }
-  50% { opacity: 0.4; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .shimmer {

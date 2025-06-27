@@ -64,6 +64,7 @@ export default function Footer() {
         }
       `}</style>
       <SocialLinks />
-    </small>
+    </small >
+
   );
 }

@@ -37,18 +37,18 @@ export default function ContributionGraph() {
 
   return (
     <>
-    <div className="flex xl:flex-row flex-col gap-4">
-      <div className="dark:bg-primary-bg bg-secondary-bg lowercase dark:border-zinc-800 border-zinc-200 p-1 rounded-lg max-w-fit max-h-fit">
-        <GitHubCalendar
-          username={username}
-          theme={github}
-          colorScheme={serverTheme}
-          blockSize={8}
-          year={calendarYear}
-        />
+      <div className="flex xl:flex-row flex-col gap-4">
+        <div className="dark:bg-primary-bg bg-secondary-bg lowercase dark:border-zinc-800 border-zinc-200 p-1 rounded-lg max-w-fit max-h-fit">
+          <GitHubCalendar
+            username={username}
+            theme={github}
+            colorScheme={serverTheme}
+            blockSize={8}
+            year={calendarYear}
+          />
+        </div>
       </div>
-    </div>
-      <div className="flex justify-center flex-row flex-wrap gap-2">
+      <div className="flex justify-center flex-row flex-wrap gap-2 mt-6">
         {years.slice(0, 5).map((year) => (
           <YearButton
             key={year}
@@ -60,6 +60,6 @@ export default function ContributionGraph() {
           />
         ))}
       </div>
-      </>
+    </>
   );
 }

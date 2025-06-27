@@ -1,200 +1,86 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import { socialLinks } from "./config";
+import Skills from "@/components/skills";
+import Github from "@/components/github";
 import Link from "next/link";
-import Particles from "./components/particle";
-import CurrentDateTimeGMT from "./components/date";
-import Github from "./components/github";
-import { Slide } from "./components/animations/Slide";
-import Skills from "./components/skills";
-import { FaLightbulb } from "react-icons/fa6";
+import { socialLinks } from "@/config";
+import { Slide } from "@/components/animations/Slide";
 
-export default function Page() {
+export default function Portfolio() {
   return (
     <Slide delay={0.5}>
-      <div className="relative min-h-screen">
-        <div className="absolute inset-0 z-0">
-          <Particles />
-        </div>
+      <div className="">
+        <header className="mb-12">
+          <p className="text-gray-600 leading-relaxed mb-4 dark:text-gray-400">
+            I'm a 21-year-old developer. Currently, I'm an engineer at <span className="font-medium underline">piratecrewfun</span> where I'm dealing with fullstack, and meteora stuffs. Before that, I was the a part of builders & adv svm cohorts at{" "}
+            <span className="font-medium underline">solanaturbine</span>.
+          </p>
+          <p className="text-gray-600 leading-relaxed dark:text-gray-400">
+            in my spare time, i enjoy reading, writing, learning new things, occasionally doodling / sketching  and travel (a lot).
+          </p>
+        </header>
+        <h2 className="text-lg font-medium mb-6">generally i be with:</h2>
+        <Skills />
+        <section className="mb-12">
+          <h2 className="text-lg font-medium mb-6">experiences:</h2>
 
-        <section className="relative z-10">
-          <a href={socialLinks.twitter} target="_blank">
-            <Image
-              src="/profile.jpg"
-              alt="Profile photo"
-              className="rounded-full bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5 grayscale hover:grayscale-0 dark:border"
-              unoptimized
-              width={160}
-              height={160}
-              priority
-            />
-          </a>
+          <div className="space-y-8">
+            <div>
+              <div className="flex justify-between items-start mb-2">
+                <h3 className="font-medium">piratecrewfun</h3>
+                <span className="text-sm text-gray-500">2025 - present</span>
+              </div>
+              <p className="text-gray-600 text-sm">dealing with fe and meteora stuffs.</p>
+            </div>
 
-          <h1 className="mb-2 flex text-2xl font-medium tracking-tight">
-            engineer ~ i use
-            <Image
-              src="/arch-linux.png"
-              width={28}
-              height={28}
-              alt="arch-linux"
-              className="w-7 h-7 ml-2 mr-2 transform transition-transform duration-300 hover:scale-125" />btw.
-          </h1>
-          <div className="prose prose-neutral dark:prose-invert">
-            <p>
-              I'm a 21-year-old developer a member of{" "}
-              <Link target="_" href="https://superteam.fun/">
-                superteam
-              </Link>{" "}
-              and a graduate of the{" "}
-              <Link target="_" href="https://turbin3.com/">
-                solanaturbine
-              </Link>{" "}
-              builders' cohort with a passion for building cool products, with a
-              strong understanding of Web2/Web3 concepts.
-            </p>
-            <p>
-              in my spare time, i enjoy reading, writing, learning new things,
-              and occasionally doodling / sketching.
-            </p>
-            <div className="flex gap-3 mb-7 mt-7">
-              <Link target="_" href="https://cal.com/avhidotsol-wsblbp/meet">
-                <button className=" flex items-center gap-2 rounded-lg text-center px-4 py-2 border border-transparent border-zinc-200  dark:border-zinc-700 text-sm font-medium cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-                  <img
-                    src="/icons/google-meet.png"
-                    alt="book a meet"
-                    className="h-5 w-5 flex"
-                  />
-
-                  book a meet
-                </button>
-              </Link>
+            <div>
+              <div className="flex justify-between items-start mb-2">
+                <h3 className="font-medium">superteam</h3>
+                <span className="text-sm text-gray-500">2025 - present</span>
+              </div>
+              <p className="text-gray-600 text-sm">
+                joined Superteam as a member and a 2x grant recipient.
+              </p>
             </div>
             <div>
-              <Skills />
-            </div>
-            <div className="mt-8">
-              some of my recent achievements / experiences: <br />
-              <div className="flex tracking-tight rounded-md py-0 mt-4 items-center space-x-4">
-                <Image
-                  src="/pirate.png"
-                  width={48}
-                  height={48}
-                  alt="turbine"
-                  className="w-12 h-12 rounded-full object-cover border border-gray-500"
-                />
-                <div>
-                  <p className="font-semibold">
-                    <Link className="!font-semibold" href="/experience/pirate">
-                      piratecrewfun ~ vibe coder
-                    </Link>
-                    <span className="text-gray-400 ml-2">jun 2025 - present</span>
-                  </p>
-                  <p className="tracking-tight text-sm text-gray-400">
-                    currently dealing with fs and contract stuff
-                  </p>
-                </div>
+              <div className="flex justify-between items-start mb-2">
+                <h3 className="font-medium">akatsuki</h3>
+                <span className="text-sm text-gray-500">2025 - present</span>
               </div>
-
-              <div className="flex tracking-tight rounded-md py-0 mt-4 items-center space-x-4">
-                <Image
-                  src="/turbine.jpg"
-                  width={48}
-                  height={48}
-                  alt="turbine"
-                  className="w-12 h-12 rounded-full object-cover border border-gray-500"
-                />
-                <div>
-                  <p className="font-semibold">
-                    <Link className="!font-semibold" href="/experience/turbine">
-                      solanaturbin3 ~ grad
-                    </Link>
-                    <span className="text-gray-400 ml-2">mar 2025</span>
-                  </p>
-                  <p className="tracking-tight text-sm text-gray-400">
-                    successfully graduated builders' cohort and also shipped
-                    capstone.
-                  </p>
-                </div>
-              </div>
-              <div className="flex tracking-tight rounded-md py-0 mt-2 items-center space-x-4">
-                <Image
-                  src="/superteam.jpg"
-                  width={48}
-                  height={48}
-                  alt="superteam"
-                  className="w-12 h-12 rounded-full object-cover border border-gray-500"
-                />
-                <div>
-                  <p className="font-semibold">
-                    <Link
-                      className="!font-semibold"
-                      href="/experience/superteam"
-                    >
-                      superteam ~ member ~ grant recipient (2x)
-                    </Link>
-                    <span className="text-gray-400 ml-2">mar 2025</span>
-                  </p>
-                  <p className="tracking-tight text-sm text-gray-400">
-                    Received a total of <span className="blur-sm inline-block">$XXXX</span> grant from the superteam.
-                  </p>
-                </div>
-              </div>
-              <div className="flex tracking-tight rounded-md py-0 mt-0 items-center space-x-4">
-                <Image
-                  src="/athena.png"
-                  width={48}
-                  height={48}
-                  alt="superteam"
-                  className="w-12 h-12 rounded-full object-cover border border-gray-500"
-                />
-                <div>
-                  <p className="font-semibold">
-                    <Link className="!font-semibold" href="/experience/athena">
-                      project athena ~ core member
-                    </Link>
-                    <span className="text-gray-400 ml-2">nov 2024</span>
-                  </p>
-                  <p className="tracking-tight text-sm text-gray-400">
-                    a community of crack devs shipping and developing day and
-                    nights
-                  </p>
-                </div>
-              </div>
-              <br />
-            </div>
-            <div className="">
-              <Github />
-            </div>
-            <div className="mt-9 w-full h-px bg-zinc-800"></div>
-            <p>
-              if you're interested in collaborating on building some cool sh*ts,
-              feel free to dm me on <Link href={socialLinks.twitter}>x</Link> or
-              drop me an <Link href={socialLinks.email}>email</Link> or <Link href="https://cal.com/avhidotsol-wsblbp/meet">book a meet</Link>. i will get
-              back to you within 2 business days. i'm always open to new ideas
-              and projects!
-            </p>
-            <p>
-              built and maintained by{" "}
-              <a href="https://x.com/avhidotsol" target="_blank">
-                avhi
-              </a>
-              .
-            </p>
-            <div className="text-gray-400 text-sm items-center flex-none lg:flex w-full gap-[220px]">
-              <span className="w-[200px]">
-                <CurrentDateTimeGMT />
-              </span>
-
-              <p className="flex items-center text-sm gap-1 text-gray-500">
-                <FaLightbulb className="text-yellow-400 animate-pulse drop-shadow-[0_0_8px_rgba(253,224,71,0.8)]" />
-                Last updated on june 20, 2025
+              <p className="text-gray-600 text-sm">
+                building a team a cracked devs, and till now we managed to win $15k+ grants.
               </p>
+            </div>
 
+            <div>
+              <div className="flex justify-between items-start mb-2">
+                <h3 className="font-medium">project athena</h3>
+                <span className="text-sm text-gray-500">2024 - present</span>
+              </div>
+              <p className="text-gray-600 text-sm">got the opp to be a core member here, community of crack devs shipping and developing day and night.
+              </p>
             </div>
           </div>
-        </section >
-      </div >
-    </Slide >
-  );
+        </section>
+        <div>
+          <Github />
+        </div>
+        <div className="mt-9 w-full h-px bg-zinc-600"></div>
+        <p className="text-gray-600 leading-relaxed mt-6 dark:text-gray-400">
+          if you're interested in collaborating on building some cool sh*ts,
+          feel free to dm me on <Link href={socialLinks.twitter}>x</Link> or
+          drop me an <Link href={socialLinks.email}>email</Link>. i will get
+          back to you within 2 business days. i'm always open to new ideas
+          and projects!
+        </p>
+        <p className="text-gray-500 mt-6 mb-10">
+          built and maintained by{" "}
+          <a className="underline" href="https://x.com/avhidotsol" target="_blank">
+            avhi
+          </a>
+          .
+        </p>
+      </div>
+    </Slide>
+  )
 }

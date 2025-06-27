@@ -1,16 +1,15 @@
 const Skills = () => {
   const technologies = [
+    { name: "solana", image: "/icons/solana.png" },
+    { name: "rust", image: "/icons/rust.png" },
+    { name: "anchor", image: "/icons/anchor.png" },
     { name: "next.js", image: "/icons/nextjs.png" },
     { name: "typescript", image: "/icons/typescript.png" },
-    { name: "rust", image: "/icons/rust.png" },
-    { name: "solana", image: "/icons/solana.png" },
-    { name: "anchor", image: "/icons/anchor.png" },
   ];
 
   return (
     <div>
-      <div className="mb-4">generally i be with:</div>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 mb-6">
         {technologies.map((tech, index) => (
           <div
             key={index}
