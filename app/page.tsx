@@ -11,8 +11,9 @@ export default function Portfolio() {
     <Slide delay={0.5}>
       <div className="">
         <header className="mb-12">
+          <p className="text-gray-600 leading-relaxed mb-6 dark:text-gray-400">I'm 21-year-old developer based in india.</p>
           <p className="text-gray-600 leading-relaxed mb-4 dark:text-gray-400">
-            I'm a 21-year-old developer. Currently, I'm an engineer at <span className="font-medium underline">piratecrewfun</span> where I'm dealing with fullstack, and meteora stuffs. Before that, I was the a part of builders & adv svm cohorts at{" "}
+            currently engineer at <span className="font-medium underline">piratecrewfun</span> where I'm dealing with fullstack, and meteora stuffs. Before that, I was the a part of builders & adv svm cohorts at{" "}
             <span className="font-medium underline">solanaturbine</span>.
           </p>
           <p className="text-gray-600 leading-relaxed dark:text-gray-400">
