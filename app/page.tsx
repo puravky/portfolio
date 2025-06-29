@@ -9,21 +9,21 @@ import { Slide } from "@/components/animations/Slide";
 export default function Portfolio() {
   return (
     <Slide delay={0.5}>
-      <div className="">
-        <header className="mb-12">
-          <p className="text-gray-600 leading-relaxed mb-6 dark:text-gray-400">I'm 21-year-old developer based in india.</p>
-          <p className="text-gray-600 leading-relaxed mb-4 dark:text-gray-400">
-            Currently, an engineer at <Link href="https://x.com/PirateCrewFun" target="_blank" className="font-medium underline">piratecrewfun</Link> working across full-stack stuff, smart contract workflows, and Meteora integrations. Before this, I was part of the Builders and Advanced SVM cohorts at {" "}
-            <Link href="https://x.com/solanaturbine" target="_blank" className="font-medium underline">solanaturbine</Link>.
+      <div className="text-sm">
+        <header className="mb-6">
+          <p className="text-gray-600 mb-6 dark:text-gray-400">I'm 21-year-old developer based in india.</p>
+          <p className="text-gray-600 mb-4 dark:text-gray-400">
+            Currently, an engineer at <Link href="https://x.com/PirateCrewFun" target="_blank" className="font-medium underline decoration-gray-200 decoration-4 dark:decoration-gray-800">piratecrewfun</Link> working across full-stack stuff, smart contract workflows, and Meteora integrations. Before this, I was part of the Builders and Advanced SVM cohorts at {" "}
+            <Link href="https://x.com/solanaturbine" target="_blank" className="font-medium underline decoration-gray-200 decoration-4 dark:decoration-gray-800">solanaturbine</Link>.
           </p>
-          <p className="text-gray-600 leading-relaxed dark:text-gray-400">
+          <p className="text-gray-600 dark:text-gray-400">
             in my spare time, i enjoy reading, writing, learning new things, occasionally doodling/sketching and traveling (a lot).
           </p>
         </header>
         <h2 className="text-lg font-medium mb-6">generally i be with:</h2>
         <Skills />
         <section className="mb-10">
-          <h2 className="text-lg font-medium mb-6 mt-10">experiences:</h2>
+          <h2 className="text-lg font-medium mb-6 mt-6">experiences:</h2>
 
           <div className="space-y-8">
             <div>
@@ -54,8 +54,8 @@ export default function Portfolio() {
               </div>
               <p className="text-sm text-gray-500 italic mb-2">member / 2x Grant Recipient</p>
               <p className="text-gray-600 text-sm">
-                Active member of <Link className="underline" target="_blank" href="https://superteam.fun/">Superteam</Link>, contributing to the Solana ecosystem through projects, collaborations, and community initiatives.
-                Awarded 2 grants totaling <span className="blur-sm">$X,XXX</span> for shipping <Link className="underline" href="https://www.avhidotsol.xyz/proof-of-work/blink-arena">blink-arena</Link> & <Link className="underline" href="https://www.avhidotsol.xyz/proof-of-work/nestfolio">nestfolio</Link>.
+                Active member of <Link className="underline decoration-gray-200 decoration-4 dark:decoration-gray-800" target="_blank" href="https://superteam.fun/">Superteam</Link>, contributing to the Solana ecosystem through projects, collaborations, and community initiatives.
+                Awarded 2 grants totaling <span className="blur-sm">$X,XXX</span> for shipping <Link className="underline decoration-gray-200 decoration-4 dark:decoration-gray-800" href="https://www.avhidotsol.xyz/proof-of-work/blink-arena">blink-arena</Link> & <Link className="underline decoration-gray-200 decoration-4 dark:decoration-gray-800" href="https://www.avhidotsol.xyz/proof-of-work/nestfolio">nestfolio</Link>.
               </p>
             </div>
 
@@ -66,7 +66,7 @@ export default function Portfolio() {
               </div>
               <p className="text-sm text-gray-500 italic mb-2">kisame</p>
               <p className="text-gray-600 text-sm">
-                co-founder and team lead of <Link className="underline" href="https://x.com/akatsuk10_" target="_blank">akatsuki</Link> ~ a team of high-performing developers.
+                co-founder and team lead of <Link className="underline decoration-gray-200 decoration-4 dark:decoration-gray-800" href="https://x.com/akatsuk10_" target="_blank">akatsuki</Link> ~ a team of high-performing developers.
                 We've won $15k+ in grants while building experimental products across web2/web3 infrastructures.
               </p>
             </div>
@@ -78,7 +78,7 @@ export default function Portfolio() {
               </div>
               <p className="text-sm text-gray-500 italic mb-2">Core Contributor</p>
               <p className="text-gray-600 text-sm">
-                Core member and contributor at <Link className="underline" href="https://x.com/AthenaF0SS" target="_blank">Project Athena</Link>, a community of skilled developers focused on building and shipping fast.
+                Core member and contributor at <Link className="underline decoration-gray-200 decoration-4 dark:decoration-gray-800" href="https://x.com/AthenaF0SS" target="_blank">Project Athena</Link>, a community of skilled developers focused on building and shipping fast.
                 Collaborating on high-impact ideas and pushing technical boundaries daily.
               </p>
             </div>
@@ -88,16 +88,16 @@ export default function Portfolio() {
           <Github />
         </div>
         <div className="mt-9 w-full h-px bg-zinc-300 dark:bg-zinc-600"></div>
-        <p className="text-gray-600 leading-relaxed mt-6 dark:text-gray-400">
+        <p className="text-gray-600 mt-6 dark:text-gray-400">
           if you're interested in collaborating on building some cool sh*ts,
-          feel free to dm me on <Link className="underline" href={socialLinks.twitter}>x</Link> or
-          drop me an <Link className="underline" href={socialLinks.email}>email</Link>. i will get
+          feel free to dm me on <Link className="underline decoration-gray-200 decoration-4 dark:decoration-gray-800" href={socialLinks.twitter}>x</Link> or
+          drop me an <Link className="underline decoration-gray-200 decoration-4 dark:decoration-gray-800" href={socialLinks.email}>email</Link>. i will get
           back to you within 2 business days. i'm always open to new ideas
           and projects!
         </p>
         <p className="text-gray-500 mt-6 mb-10">
           built and maintained by{" "}
-          <a className="underline" href={socialLinks.twitter} target="_blank">
+          <a className="underline decoration-gray-200 decoration-4 dark:decoration-gray-800" href={socialLinks.twitter} target="_blank">
             avhi
           </a>
           .
