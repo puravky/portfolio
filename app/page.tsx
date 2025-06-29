@@ -33,7 +33,7 @@ export default function Portfolio() {
               </div>
               <p className="text-sm text-gray-500 italic mb-2">Engineer</p>
               <p className="text-gray-600 text-sm">
-                Working across full-stack, smart contract workflows, and Meteora integrations. building and maintaining systems that bridge frontend experiences with on-chain mechanics in the Solana ecosystem, with a focus on integrating Meteora’s infrastructure and smart routing capabilities.
+                Working across full-stack, smart contract workflows, and Meteora integrations. building and maintaining systems that bridge user experiences with on-chain mechanics in the Solana ecosystem, with a focus on integrating Meteora’s infrastructure and smart routing capabilities.
               </p>
             </div>
 
