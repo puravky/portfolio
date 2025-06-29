@@ -61,8 +61,6 @@ export const ThemeSwitch: React.FC = () => {
   }, [setTheme]);
 
   const toggleTheme = () => {
-    const audio = new Audio("toggle.mp3")
-    audio.play().catch((e) => console.error("failed", e))
     const newTheme = currentTheme === 'light' ? 'dark' : 'light';
     localStorage.setItem(storageKey, newTheme);
     reflectPreference(newTheme);
