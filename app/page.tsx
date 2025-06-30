@@ -9,7 +9,7 @@ import { Slide } from "@/components/animations/Slide";
 export default function Portfolio() {
   return (
     <Slide delay={0.5}>
-      <div className="text-sm">
+      <div className="text-medium">
         <header className="mb-6">
           <p className="text-gray-600 mb-6 dark:text-gray-400">I'm 21-year-old developer based in india.</p>
           <p className="text-gray-600 mb-4 dark:text-gray-400">
