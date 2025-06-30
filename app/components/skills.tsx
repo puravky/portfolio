@@ -16,7 +16,7 @@ const Skills = () => {
         {technologies.map((tech, index) => (
           <div
             key={index}
-            className="rounded-lg text-center px-4 py-2 border border-transparent border-zinc-200 dark:border-zinc-700 text-sm cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-md dark:hover:shadow-[0_4px_gray] flex items-center gap-2"
+            className="rounded-lg text-center px-4 py-2 border border-transparent border-zinc-200 dark:border-zinc-700 text-sm cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-md dark:hover:shadow-white/25 flex items-center gap-2"
           >
             <img src={tech.image} alt={tech.name} className="custom-skill-icon" />
             <span>{tech.name}</span>
