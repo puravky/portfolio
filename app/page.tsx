@@ -22,6 +22,7 @@ export default function Portfolio() {
         </header>
         <h2 className="text-lg font-medium mb-6">generally i be with:</h2>
         <Skills />
+        <div className="mt-9 w-full h-px bg-zinc-300 dark:bg-zinc-600"></div>
         <section className="mb-10">
           <h2 className="text-lg font-medium mb-6 mt-6">experiences:</h2>
 

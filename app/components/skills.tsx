@@ -5,6 +5,9 @@ const Skills = () => {
     { name: "anchor", image: "/icons/anchor.png" },
     { name: "next.js", image: "/icons/nextjs.png" },
     { name: "typescript", image: "/icons/typescript.png" },
+    { name: "pinocchio", image: "/icons/pinocchio.png" },
+    { name: "linux", image: "/icons/arch-linux.png" },
+    { name: "neovim", image: "/icons/neovim.png" },
   ];
 
   return (
