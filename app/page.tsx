@@ -5,11 +5,13 @@ import Github from "@/components/github";
 import Link from "next/link";
 import { socialLinks } from "@/config";
 import { Slide } from "@/components/animations/Slide";
+import { VisitTracker } from "./components/visitor";
 
 export default function Portfolio() {
   return (
     <Slide delay={0.5}>
       <div className="text-medium">
+        <VisitTracker />
         <header className="mb-6">
           <p className="text-gray-600 mb-6 dark:text-gray-400">I'm 21-year-old developer based in india.</p>
           <p className="text-gray-600 mb-4 dark:text-gray-400">
