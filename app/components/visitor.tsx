@@ -1,6 +1,13 @@
 "use client";
 import { useEffect, useState } from "react";
 
+function formatNumber(num: number): string {
+  if (num >= 1_000_000)
+    return (num / 1_000_000).toFixed(1).replace(/\.0$/, "") + "M";
+  if (num >= 1_000) return (num / 1_000).toFixed(1).replace(/\.0$/, "") + "k";
+  return num.toString();
+}
+
 export function VisitTracker() {
   const [count, setCount] = useState<number | null>(null);
 
@@ -33,7 +40,7 @@ export function VisitTracker() {
 
   return (
     <div className="text-sm text-gray-500">
-    {count !== null ? count : ""} visits
+      {count !== null ? formatNumber(count) : ""} visits
     </div>
   );
 }
