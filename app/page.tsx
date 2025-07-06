@@ -12,7 +12,7 @@ export default function Portfolio() {
     <Slide delay={0.5}>
       <div className="text-medium">
         <header className="mb-6">
-          <p className="text-gray-600 mb-6 dark:text-gray-400">I'm 21-year-old developer based in india.</p>
+          <p className="text-gray-600 mb-6 dark:text-gray-400">I'm 22-year-old developer based in india.</p>
           <p className="text-gray-600 mb-4 dark:text-gray-400">
             Currently, an engineer at <Link href="https://x.com/PirateCrewFun" target="_blank" className="font-medium underline decoration-gray-200 decoration-4 dark:decoration-gray-800">piratecrewfun</Link> working across full-stack stuff, smart contract workflows, and Meteora integrations. Before this, I was part of the Builders and Advanced SVM cohorts at {" "}
             <Link href="https://x.com/solanaturbine" target="_blank" className="font-medium underline decoration-gray-200 decoration-4 dark:decoration-gray-800">solanaturbine</Link>.
