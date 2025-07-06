@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { FaCircle } from "react-icons/fa6";
 
 function formatNumber(num: number): string {
   if (num >= 1_000_000)
@@ -39,7 +40,8 @@ export function VisitTracker() {
   }, []);
 
   return (
-    <div className="text-sm text-gray-500">
+    <div className="text-sm flex items-center gap-2 text-gray-500">
+      <FaCircle className="text-green-500 animate-pulse drop-shadow-[0_0_6px_rgba(34,197,94,0.8)] w-3 h-3" />
       {count !== null ? formatNumber(count) : ""} visits
     </div>
   );
