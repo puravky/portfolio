@@ -24,12 +24,13 @@ Welcome to my personal portfolio website — a modern, minimal, and responsive s
 - **CSS3** — modern layout using Flexbox + Grid
 - **JavaScript** — interactive components and theme handling
 - **Iconoir** — clean, modern icon set via CDN
+- **Google Fonts** - Source Code Pro used as the font
 
 ---
 
 ## 🚀 Deployment
 
-This portfolio is deployed using **Vercel** deployment and hosting services.
+This portfolio is deployed using **Vercel's** deployment and hosting services.
 
 **Live Site**: https://puravkyme.vercel.app
 
@@ -37,7 +38,7 @@ This portfolio is deployed using **Vercel** deployment and hosting services.
 
 ## 🧑‍💻 About Me
 
-I'm Purav Yadav — a passionate web developer, creative technologist, and lifelong learner. This portfolio is my digital playground and professional profile — built to reflect both craft and personality.
+I'm Purav Ky — a passionate web developer, creative technologist, and lifelong learner. This portfolio is my digital playground and professional profile — built to reflect both craft and personality.
 
 ---
 
@@ -60,7 +61,7 @@ Feel free to clone, use, and customize — but please credit when applicable.
 ## 🙏 Acknowledgments
 
 Inspired by [sj.land](https://sj.land) by Sam Zhang  
-Icons by [Iconoir](https://iconoir.com) 
-Fonts via Google Fonts (Source Code Pro)
+Icons by [Iconoir](https://iconoir.com)
+Fonts via [Google Fonts](fonts.google.com)
 
 ---

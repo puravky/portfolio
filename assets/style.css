@@ -115,7 +115,7 @@ body.dark-mode .navigation {
 
 
 .header {
-    margin-bottom: 100px;
+    margin-bottom: 8rem;
     border-bottom: 1px solid gray;
     padding-bottom: 60px;
     animation-delay: 0.1s;
@@ -123,17 +123,19 @@ body.dark-mode .navigation {
 }
 
 .name {
-    font-size: 2.8rem;
+    font-size: 4rem;
     font-weight: 700;
     letter-spacing: -0.02em;
     margin-bottom: 16px;
+    margin-top: 10rem;
     color: var(--primary-text);
 }
 
 .title {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    line-height: 5px;
     color: var(--secondary-text);
-    margin-bottom: 24px;
+    margin-bottom:32px;
     font-weight: 400;
 }
 
