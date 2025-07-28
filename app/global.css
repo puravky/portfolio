@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 ::selection {
-  background-color: #47a3f3;
+  background-color: hsl(208, 88%, 62%);
   color: #fefefe;
 }
 
@@ -18,13 +18,17 @@
   --sh-jsxliterals: #6266d1;
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
+  
+  /* Custom color scheme - blackish in light mode */
+  --bg-color: #1a1a1a;
+  --text-color: #f8f8f8;
 }
 
 /* Dark theme colors */
 .dark {
-  background-color: #121212;
+  background-color: #f5f5f5;
   --sh-class: #4c97f8;
-  --sh-identifier: white;
+  --sh-identifier: #1a1a1a;
   --sh-sign: #8996a3;
   --sh-string: #0fa295;
   --sh-keyword: #f47067;
@@ -32,11 +36,115 @@
   --sh-jsxliterals: #6266d1;
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
+  
+  /* Custom color scheme - off white in dark mode */
+  --bg-color: #f5f5f5;
+  --text-color: #1a1a1a;
 }
 
 html {
   min-width: 360px;
   scroll-behavior: smooth;
+}
+
+/* Set Source Code Pro as default font with bold weight */
+* {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 700;
+  font-size: 1.03em;
+  color: var(--text-color);
+}
+
+/* Override for elements that should remain at normal weight if needed */
+code, pre {
+  font-weight: 500;
+}
+
+/* Hide default scrollbar */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Progress bar styles */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #faaa2a, #FF6200);
+  z-index: 9999;
+  transition: width 0.1s ease-out;
+}
+
+/* Modern Navigation Styles */
+.modern-nav {
+  background: rgba(128, 128, 128, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(128, 128, 128, 0.12);
+  transition: all 0.2s ease;
+}
+
+.dark .modern-nav {
+  background: rgba(128, 128, 128, 0.12);
+  border: 1px solid rgba(128, 128, 128, 0.15);
+}
+
+/* Subtle Navigation Link Effects */
+.nav-item {
+  transition: all 0.2s ease;
+  position: relative;
+  opacity: 0.7;
+}
+
+.nav-item:hover {
+  opacity: 1;
+  background: rgba(128, 128, 128, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.dark .nav-item:hover {
+  background: rgba(128, 128, 128, 0.15);
+}
+
+/* Smart Logo Styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.logo-container:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.logo-image {
+  height: 36px;
+  width: 180px;
+  object-fit: contain;
+  object-position: center;
+  filter: contrast(1.2) brightness(1.1);
+  transition: all 0.2s ease;
+}
+
+.dark .logo-image {
+  filter: contrast(1.3) brightness(1.2);
 }
 
 .prose {

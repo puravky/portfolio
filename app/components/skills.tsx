@@ -1,13 +1,13 @@
 const Skills = () => {
   const technologies = [
-    { name: "solana", image: "/icons/solana.png" },
-    { name: "rust", image: "/icons/rust.png" },
-    { name: "anchor", image: "/icons/anchor.png" },
-    { name: "next.js", image: "/icons/nextjs.png" },
     { name: "typescript", image: "/icons/typescript.png" },
-    { name: "pinocchio", image: "/icons/pinocchio.png" },
-    { name: "linux", image: "/icons/arch-linux.png" },
-    { name: "neovim", image: "/icons/neovim.png" },
+    { name: "git", image: "/icons/git.png" },
+    { name: "expo", image: "/icons/expo.png" },
+    { name: "streamlit", image: "/icons/streamlit.png" },
+    { name: "next.js", image: "/icons/nextjs.png" },
+    { name: "python", image: "/icons/python.png" },
+    { name: "firebase", image: "/icons/firebase.png" },
+    { name: "node.js", image: "/icons/node.png" },
   ];
 
   return (
