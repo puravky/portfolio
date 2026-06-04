@@ -3,12 +3,12 @@ import Link from "next/link";
 export function Navbar({ className }: { className?: string }) {
   return (
     <header className={`sticky top-6 z-50 mt-6 mx-auto w-full max-w-3xl px-6 ${className || ""}`.trim()}>
-      <nav className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-6 py-4 text-zinc-400 backdrop-blur-md shadow-xl">
+      <nav className="flex items-center justify-between rounded-2xl border border-white/10 bg-zinc-900/70 px-6 py-3.5 text-zinc-400 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.4),0_2px_8px_rgba(0,0,0,0.3)] ring-1 ring-white/5">
         <Link
           href="/"
-          className="font-mono font-semibold text-lg hover:text-white transition-colors"
+          className="font-mono font-semibold text-base hover:text-white transition-colors"
         >
-          async
+          puravky
         </Link>
         <div className="flex gap-6 font-semibold font-mono text-sm">
           <Link href="/projects" className="hover:text-white transition-colors">
