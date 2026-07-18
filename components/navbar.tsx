@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { House } from "lucide-react"
 
 export function Navbar({ className }: { className?: string }) {
   return (
@@ -8,7 +9,7 @@ export function Navbar({ className }: { className?: string }) {
           href="/"
           className="font-mono font-semibold text-base hover:text-white transition-colors"
         >
-          puravky
+          home
         </Link>
         <div className="flex gap-6 font-semibold font-mono text-sm">
           <Link href="/projects" className="hover:text-white transition-colors">

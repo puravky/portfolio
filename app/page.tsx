@@ -14,7 +14,7 @@ export default function Home() {
   const router = useRouter();
   return (
     <main className="flex-1 flex flex-col font-mono">
-      <div className="mx-auto w-full max-w-3xl px-6 py-8 md:py-10 mt-8">
+      <div className="mx-auto w-full max-w-3xl px-6 py-8 md:py-10 mt-6">
         <section className="flex flex-col items-start">
           {/* Name row + action buttons */}
           <div className="flex flex-col md:flex-row md:items-center md:justify-between w-full gap-6">
@@ -34,7 +34,7 @@ export default function Home() {
 
           {/* Bio */}
           <p className="mt-6 w-full text-base text-slate-400 leading-relaxed">
-            A <span className="text-stone-200">FULL STACK DEVELOPER</span> &amp; <span className="text-stone-200">AI ENGINEER</span> who loves to build modern tech systems that solve real world problems using unique and state-of-the-art approach. From crafting performant web apps to building intelligent agents and retrieval pipelines — I care about simplicity on the surface, and depth where it matters.
+            A <span className="text-stone-200">FULL STACK DEVELOPER</span> &amp; <span className="text-stone-200">AI ENGINEER</span> who loves to build modern tech systems that solve real world problems using unique and state-of-the-art approach. From crafting performant web apps to building intelligent agents and retrieval pipelines.I care about simplicity on the surface, and depth where it matters.
           </p>
 
           {/* Social links + Resume */}
