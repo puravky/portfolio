@@ -1,41 +1,21 @@
 import type { Metadata } from "next";
+import "@fontsource/silkscreen/400.css";
+import "@fontsource/silkscreen/700.css";
+import { GeistSans } from "geist/font/sans";
+import { GeistPixelSquare } from "geist/font/pixel/square";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
-import { Ubuntu, Source_Code_Pro } from "next/font/google";
-import { Navbar } from "@/components/navbar";
-import { Analytics } from "@vercel/analytics/next"
-
-const ubuntu = Ubuntu({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
-  variable: "--font-ubuntu",
-});
-
-const sourceCode = Source_Code_Pro({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  variable: "--font-source-code-pro",
-});
 
 export const metadata: Metadata = {
-  title: "Purav Kumar | Portfolio",
-  description: "Portfolio of Purav Kumar",
+  metadataBase: new URL("https://puravky.me"),
+  title: { default: "Digital Crib — Purav Kumar", template: "%s — Purav Kumar" },
+  description: "Purav Kumar's digital crib: software, systems, applied AI, selected work, and notes from the build.",
+  alternates: { canonical: "/" },
+  openGraph: { title: "Digital Crib — Purav Kumar", description: "Software, systems, applied AI, and notes from the build.", url: "https://puravky.me", siteName: "Digital Crib", type: "website" },
+  twitter: { card: "summary", title: "Digital Crib — Purav Kumar", description: "Software, systems, applied AI, and notes from the build." },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html
-      lang="en"
-      className={`${ubuntu.variable} ${sourceCode.variable} antialiased`}
-    >
-      <body className="min-h-screen flex flex-col bg-black text-white">
-        <Navbar />
-        {children}
-        <Analytics />
-      </body>
-    </html>
-  );
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const jsonLd = { "@context": "https://schema.org", "@type": "Person", name: "Purav Kumar", url: "https://puravky.me", sameAs: ["https://github.com/puravky", "https://www.linkedin.com/in/puravky"], alumniOf: { "@type": "CollegeOrUniversity", name: "Delhi Technological University" } };
+  return <html lang="en" className={`${GeistSans.variable} ${GeistPixelSquare.variable}`}><body>{children}<Analytics /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} /></body></html>;
 }
