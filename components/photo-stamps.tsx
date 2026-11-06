@@ -13,7 +13,7 @@ export function PhotoStamps() {
       {photos.map((photo) => (
         <div className={`stamp ${photo.className}`} key={photo.src}>
           <div className="stamp-photo">
-            <Image src={photo.src} alt={photo.alt} fill priority sizes="170px" />
+            <Image src={photo.src} alt={photo.alt} fill sizes="170px" />
           </div>
         </div>
       ))}

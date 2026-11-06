@@ -2,16 +2,11 @@
 
 import Image from "next/image";
 import { type CSSProperties, useState } from "react";
-import { BriefcaseBusiness, Clapperboard, FileText, GraduationCap, Heart, Home, ImagePlus, Layers3, Mail, Music2, NotebookPen, Palette, Trophy, Wrench } from "lucide-react";
+import { Braces, BriefcaseBusiness, Cog, Construction, FileText, GraduationCap, Heart, Home, Layers3, Mail, NotebookPen, Wrench } from "lucide-react";
 import { BrandIcon } from "@/components/brand-icon";
 import { CopyEmail } from "@/components/copy-email";
-
-const socialLinks = {
-  github: "https://github.com/puravky",
-  linkedin: "https://www.linkedin.com/in/puravky",
-  x: "https://x.com/puravky",
-  email: "mailto:puravkumaryadav@gmail.com",
-};
+import { PhotoStamps } from "@/components/photo-stamps";
+import { siteConfig } from "@/site-config";
 
 type Tab = "Home" | "Works" | "Stack" | "Writings" | "Fun";
 
@@ -67,12 +62,12 @@ function HomePanel() {
         <h1>I build systems that <em>ship.</em></h1>
         <p className="intro-copy">I’m a product-minded engineer living between software development and AI engineering - comfortable moving from an unfamiliar codebase to architecture, APIs, data, deployment, and the final interface.</p>
         <div className="contact-row">
-          <div className="email-cluster"><Mail size={14} aria-hidden="true" /><a href={socialLinks.email}>puravkumaryadav@gmail.com</a><CopyEmail /></div>
+          <div className="email-cluster"><Mail size={14} aria-hidden="true" /><a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a><CopyEmail email={siteConfig.email} /></div>
           <div className="social-icons">
-            <a href={socialLinks.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub"><BrandIcon name="github" label="GitHub" /></a>
-            <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><BrandIcon name="linkedin" label="LinkedIn" /></a>
-            <a href={socialLinks.x} target="_blank" rel="noopener noreferrer" aria-label="X"><BrandIcon name="x" label="X" /></a>
-            <a className="resume-link" href="/resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open résumé PDF"><FileText size={17} /><span>résumé</span></a>
+            <a href={siteConfig.social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub"><BrandIcon name="github" label="GitHub" /></a>
+            <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><BrandIcon name="linkedin" label="LinkedIn" /></a>
+            <a href={siteConfig.social.x} target="_blank" rel="noopener noreferrer" aria-label="X"><BrandIcon name="x" label="X" /></a>
+            <a className="resume-link" href="/resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open résumé PDF"><FileText size={17} /><span>CV</span></a>
           </div>
         </div>
       </section>
@@ -99,7 +94,7 @@ function HomePanel() {
 }
 
 function WorksPanel() {
-  return <ComingSoon icon={BriefcaseBusiness} label="Selected work is being prepared." />;
+  return <ComingSoon status="work in progress" label="Selected work is being prepared." />;
 }
 
 function StackPanel() {
@@ -112,27 +107,35 @@ function StackPanel() {
 }
 
 function WritingsPanel() {
-  return <ComingSoon icon={NotebookPen} label="Notes from the build are on their way." />;
+  return <ComingSoon status="under construction" label="Notes from the build are on their way." />;
 }
 
-function ComingSoon({ icon: Icon, label }: { icon: typeof BriefcaseBusiness; label: string }) {
-  return <div className="coming-soon"><Icon size={22} strokeWidth={1.5} /><p>coming soon</p><span>{label}</span></div>;
+function ComingSoon({ status, label }: { status: string; label: string }) {
+  return <div className="coming-soon"><div className="construction-mark" aria-hidden="true"><Construction className="construction-main" /><Cog className="construction-cog" /></div><p>{status}</p><span>{label}</span></div>;
 }
 
-const funCards = [
-  { title: "art I love", icon: Palette, className: "tape-top" },
-  { title: "shows I love", icon: Clapperboard, className: "clip-card" },
-  { title: "artists I love", icon: Music2, className: "tape-corner" },
-  { title: "players I love", icon: Trophy, className: "clip-card alt" },
+const funFacts = [
+  { key: "players I'm in love with", value: "Arda Guler, Rayan Cherki, Desire Doue" },
+  { key: "design taste", value: "I’m a fan of minimalism" },
+  { key: "shows I'm currently watching", value: "Dexter, New Girl, Lanterns" },
+  { key: "unusual talent", value: "I only write code after midnight, I sleep after having coffee" },
 ];
 
 function FunPanel() {
   return (
     <div className="fun-panel">
-      <div className="fun-intro"><p className="pixel-label"><Heart size={13} /> things outside the terminal</p><h2>A small wall for the stuff I keep coming back to.</h2><p>Images, names, and odd little favorites will live here.</p></div>
-      <div className="fun-grid">
-        {funCards.map(({ title, icon: Icon, className }) => <article className={`fun-card ${className}`} key={title}><div className="fun-image-slot"><ImagePlus size={22} /><span>add image</span></div><div className="fun-card-label"><Icon size={14} /><h3>{title}</h3></div></article>)}
-      </div>
+      <div className="fun-intro"><p className="pixel-label"><Heart size={13} /> outside the terminal</p><h2>Things that make me human.</h2><p>Here are few facts about me.</p></div>
+      <section className="fact-artifact" aria-label="Fun facts about Purav">
+        <header className="fact-artifact-header">
+          <div><Braces size={15} aria-hidden="true" /><span>human.config</span></div>
+          <span className="fact-status"><i aria-hidden="true" /> read only</span>
+        </header>
+        <ol className="fun-facts">
+          {funFacts.map((fact, index) => <li key={fact.key}><span className="fact-index">{String(index + 1).padStart(2, "0")}</span><span className="fact-key">{fact.key}</span><p>{fact.value}</p></li>)}
+        </ol>
+        <footer className="fact-artifact-footer"><span>4 entries</span><span>last updated · now</span></footer>
+      </section>
+      <div className="fun-stamps"><PhotoStamps /></div>
     </div>
   );
 }

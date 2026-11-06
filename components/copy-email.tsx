@@ -3,11 +3,11 @@
 import { useState } from "react";
 import { Check, Copy } from "lucide-react";
 
-export function CopyEmail() {
+export function CopyEmail({ email }: { email: string }) {
   const [copied, setCopied] = useState(false);
 
   async function copy() {
-    await navigator.clipboard.writeText("puravkumaryadav@gmail.com");
+    await navigator.clipboard.writeText(email);
     setCopied(true);
     window.setTimeout(() => setCopied(false), 1800);
   }
