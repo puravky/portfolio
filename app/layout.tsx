@@ -8,11 +8,23 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://puravky.me"),
-  title: { default: "Digital Crib — Purav Kumar", template: "%s — Purav Kumar" },
+  title: { default: "Digital Crib", template: "%s — Purav Kumar" },
   description: "Purav Kumar's digital crib: software, systems, applied AI, selected work, and notes from the build.",
   alternates: { canonical: "/" },
-  openGraph: { title: "Digital Crib — Purav Kumar", description: "Software, systems, applied AI, and notes from the build.", url: "https://puravky.me", siteName: "Digital Crib", type: "website" },
-  twitter: { card: "summary", title: "Digital Crib — Purav Kumar", description: "Software, systems, applied AI, and notes from the build." },
+  openGraph: {
+    title: "Digital Crib — Purav Kumar",
+    description: "Software, systems, applied AI, and notes from the build.",
+    url: "https://puravky.me",
+    siteName: "Digital Crib",
+    type: "website",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Digital Crib — Purav Kumar" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Digital Crib — Purav Kumar",
+    description: "Software, systems, applied AI, and notes from the build.",
+    images: [{ url: "/twitter-image", alt: "Digital Crib — Purav Kumar" }],
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

@@ -115,9 +115,9 @@ function ComingSoon({ status, label }: { status: string; label: string }) {
 }
 
 const funFacts = [
-  { key: "players I'm in love with", value: "Arda Guler, Rayan Cherki, Desire Doue" },
+  { key: "players I'm watching", value: "Arda Guler, Rayan Cherki, Desire Doue" },
   { key: "design taste", value: "I’m a fan of minimalism" },
-  { key: "shows I'm currently watching", value: "Dexter, New Girl, Lanterns" },
+  { key: "shows I'm watching", value: "Dexter, New Girl, Lanterns" },
   { key: "unusual talent", value: "I only write code after midnight, I sleep after having coffee" },
 ];
 
